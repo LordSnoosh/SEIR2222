@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/ZVquCx6.png" width="100%">
+
 # ES2015 Template Literals Walk-thru
 
 ## What are they?

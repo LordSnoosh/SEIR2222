@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/VpVcZeQ.png">
+<img src="https://i.imgur.com/rkCk34H.png">
 
 # Control Flow in JavaScript
 
