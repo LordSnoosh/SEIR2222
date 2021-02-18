@@ -27,7 +27,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 
 ### Link to the class Zoom Room
 
-[Link to join the class Zoom Room]()
+[Link to join the class Zoom Room](https://generalassembly.zoom.us/j/95172668600?pwd=SE9YOGpoRm8xbHVJUU0wWmd6b2Z0dz09)
 
 ### Course Curriculum
 
