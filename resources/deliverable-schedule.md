@@ -8,7 +8,8 @@ Please submit your link to each assigned deliverable using the form referenced i
 
 It is a requirement to complete at least **80%** of the following to to receive: a Certificate of Completion; post-grad benefits such as the Meet and Greet; and Outcomes support:
 
-|Date Assigned|Description| Final Due Date |
+|Date Assigned|Description| Due Date |
 |---|---|---|
 |Ongoing (each challenge counts as a single deliverable)|[Daily Code Challenges](https://git.generalassemb.ly/SEI-CC/daily-js-code-challenges)| By End of Course |
+| Tue 02/23 | JS Arrays Lab | Wed 02/24 |
 
