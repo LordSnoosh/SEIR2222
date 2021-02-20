@@ -4,9 +4,7 @@
 |---|:---:|:---:|:---:|:---:|
 |  |  |  |  |  |
 | Aaron |  |  |  |  |
-| Adnan |  |  |  |  |
 | Allyn |  |  |  |  |
-| Benjamin |  |  |  |  |
 | Chase |  |  |  |  |
 | Daniel |  |  |  |  |
 | Danielle |  |  |  |  |
@@ -17,7 +15,6 @@
 | Evan |  |  |  |  |
 | Harrison |  |  |  |  |
 | Jack |  |  |  |  |
-| Jess |  |  |  |  |
 | Luis |  |  |  |  |
 | Mohammad |  |  |  |  |
 | Paul |  |  |  |  |
