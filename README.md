@@ -107,7 +107,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 
 ### Links to Sign Up for Instructors' Office Hours
 
-Both global instructors will have a limited number of 15 minute one-on-one office hour visits each week.
+Instructors will have a limited number of 15 minute one-on-one office hour visits each week.
 
 Click on the links provided below to schedule a 15 minute session for the week:
 
