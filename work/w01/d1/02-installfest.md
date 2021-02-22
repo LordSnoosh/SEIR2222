@@ -19,7 +19,7 @@ We'll be installing the following tools.
 
 ## Rosetta
 
-If you are one of the lucky few to have a new Mac with "Apple Silicon" (the new M1 chip), you'll need to install Rosetta which enables software designed to run on Intel processors.
+If you are one of the lucky few to have a new Mac with "Apple Silicon" (the new M1 chip), you'll need to install Rosetta which enables software designed for Intel processors to run on Apple Silicon machines...
 
 **Only run the following command IF you have the M1 chip:**
 
