@@ -7,10 +7,10 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 ### Contents
 
 - Course Dates and Holidays
-- Link to Global Zoom Room
+- Link to the Class Zoom Room
 - Course Curriculum
 - Instructional Team / Contact Info
-- Links to Sign Up for Global Instructor's Office Hours
+- Links to Sign Up for Instructors' Office Hours
 - Link to Recorded Lessons
 - Link to Deliverable Schedule
 - Class Repository Structure
@@ -25,7 +25,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 - Holidays:
 	- None
 
-### Link to the class Zoom Room
+### Link to the Class Zoom Room
 
 [Link to join the class Zoom Room](https://generalassembly.zoom.us/j/95172668600?pwd=SE9YOGpoRm8xbHVJUU0wWmd6b2Z0dz09)
 
@@ -105,7 +105,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 |Lead Instructor | Chris Ogilvy |  @Chris Ogilvy  | chris.ogilvy@generalassemb.ly |
 |Instructor Associate | Shaw Kitajima |  @Shaw Kitajima  | shaw.kitajima@generalassemb.ly |
 
-### Links to Sign Up for Global Instructor's Office Hours
+### Links to Sign Up for Instructors' Office Hours
 
 Both global instructors will have a limited number of 15 minute one-on-one office hour visits each week.
 
