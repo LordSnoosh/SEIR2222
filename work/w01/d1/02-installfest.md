@@ -4,7 +4,7 @@
 
 We'll be installing the following tools.
 
-- Slack
+- Rosetta
 - Homebrew
 - Xcode
 - VS Code
@@ -16,15 +16,16 @@ We'll be installing the following tools.
 - Django
 - Spectacle
 - Imgur
-- Zoom
 
-## Slack
+## Rosetta
 
-We will be using slack to communicate throughout the course. You will receive an invite to the relevant channels via e-mail. You can login via the web browser, but downloading / installing the app is highly recommended.
+If you are one of the lucky few to have a new Mac with "Apple Silicon" (the new M1 chip), you'll need to install Rosetta which enables software designed to run on Intel processors.
 
-[Download Slack](https://slack.com/downloads)
+**Only run the following command IF you have the M1 chip:**
 
-Remember to drag the Slack app into the Applications folder when you open the downloaded archive.
+```
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
 
 ## Homebrew
 
@@ -392,10 +393,6 @@ This free "productivity" tool is invaluable when it comes to minimizing the time
 ## Installing Imgur
 
 Create an account on [imgur.com](https://imgur.com/) and install [mac2imgur](https://github.com/mileswd/mac2imgur) to ease uploading screenshots and other images from your computer to your imgur account.
-
-## Zoom
-
-[Download the Zoom client](https://zoom.us/download#client_4meeting) and install it.
 
 ## Update Your Shell to Show Repo Info
 
