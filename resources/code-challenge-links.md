@@ -6,7 +6,7 @@
 | Aaron |  |  |  |  |
 | Allyn |  |  |  |  |
 | Chase |  |  |  |  |
-| Daniel |  |  |  |  |
+| Danny |  |  |  |  |
 | Danielle |  |  |  |  |
 | Dave |  |  |  |  |
 | Diego |  |  |  |  |
@@ -15,8 +15,8 @@
 | Evan |  |  |  |  |
 | Harrison |  |  |  |  |
 | Jack |  |  |  |  |
+| Khawar |  |  |  |  |
 | Luis |  |  |  |  |
-| Mohammad |  |  |  |  |
 | Paul |  |  |  |  |
 | Plamena |  |  |  |  |
 | Samuel |  |  |  |  |
