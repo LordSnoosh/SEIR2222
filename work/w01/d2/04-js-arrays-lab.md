@@ -16,11 +16,7 @@ Title your repl **JS Array Lab**.
 
 Copy the exercises below into the repl's **script.js** file and code away!
 
-<<<<<<< HEAD
-This lab is **a DELIVERABLE**. When completed, please slack the link to your repl to your instructors.
-=======
 This lab is **a DELIVERABLE**. Use the deliverable submittal link to turn in your assignment when finished.
->>>>>>> 92364e8c4e1653e85504743b3a3f330fba9ddb37
 
 ## Exercise
 
@@ -219,8 +215,5 @@ Try not to peek!
 
 ## Additional Resources
 
-<<<<<<< HEAD
 - [MDN Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-=======
-- [MDN Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
->>>>>>> 92364e8c4e1653e85504743b3a3f330fba9ddb37
+
