@@ -298,7 +298,7 @@ Whereas strings and numbers can have a virtually unlimited number of different v
 
 For example, in a Social Gaming app, we would represent a Gamer's Handle using a **string**.
 
-Before moving on to review the other data types, let's pair up with a partner and identify a couple of examples for each of the three common data types that would be used to represent information in that gaming app:
+Before moving on to review the other data types, let's identify a couple of examples for each of the three common data types that would be used to represent information in that gaming app:
 
 <table>
 	<thead>

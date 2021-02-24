@@ -63,7 +63,7 @@
 
 - Hopefully you installed _mac2imgur_ during Installfest.
 
-- After installed, launch it, click the <img src="https://i.imgur.com/K3RFxZj.png" /> in your menubar, then select `Imgur/Sign-in`.
+- After installed, launch it, click the <img src="https://i.imgur.com/IRhgj9C.png" /> in your menubar, then select `Imgur/Sign-in`.
 
 	> Note: If you don't sign in, your uploaded images will be uploaded to Imgur's public domain.
 

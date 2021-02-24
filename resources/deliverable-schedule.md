@@ -11,6 +11,6 @@ It is a requirement to complete at least **80%** of the following to to receive:
 |Date Assigned|Description| Due Date |
 |---|---|---|
 |Ongoing (each challenge counts as a single deliverable)|[Daily Code Challenges](https://git.generalassemb.ly/SEI-CC/daily-js-code-challenges)| By End of Course |
-| Tue 02/23 | JS Arrays Lab | Thu 02/25 |
+| Tue 02/23 | [JS Arrays Lab](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w01/d2/04-js-arrays-lab.md) | Thu 02/25 |
 | Wed 02/24 | JS Objects Lab | Fri 02/26 |
 

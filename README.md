@@ -126,7 +126,7 @@ For your convenience, recordings of the lessons will be available to review at
 
 A Deliverable is an assignment that is required to be submitted as instructed to your instructors.
 
-Unless otherwise stated, no deliverable will be accepted past its due date, which is typically 1 week from when the deliverable was assigned.
+Unless otherwise stated, no deliverable will be accepted past its due date, which is typically 2 days from when the deliverable was assigned.
 
 Graduation requires that 80% of deliverables be completed (working) and delivered on time.
 
