@@ -12,7 +12,6 @@
 | Diego |  |  |  |  |
 | Elliot |  |  |  |  |
 | Erwin |  |  |  |  |
-| Evan |  |  |  |  |
 | Harrison |  |  |  |  |
 | Jack |  |  |  |  |
 | Khawar |  |  |  |  |
