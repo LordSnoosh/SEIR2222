@@ -157,7 +157,7 @@ console.log('Exercise 1:', title);
 console.log('Exercise 2:', label);
 console.log('Exercise 3:', album3.albumDetails.formats[1]);
 console.log('Exercise 4:', album3.albumDetails.released.toLocaleDateString());
-console.log('Exercise 5:', album4.albumDetails.labels);
+console.log('Exercise 5:', album4.albumDetails.label);
 console.log('Exercise 6:', album5.albumDetails.labels[1]);
 console.log('Exercise 7:', formats);
 console.log('Exercise 8:', labels);
