@@ -88,8 +88,6 @@
 #### Tags
 - Most **Tags** have an opening and closing tag name inside angle brackets like this<br>`<p>This is a paragraph</p>`. Note the slash in the closing tag.
 - Some tags such as `<img>` and `<br>` are called *empty tags* because they never have content and thus do not have a closing tag.  Prior to HTML5, empty tags typically had a slash before the last angle bracket like this `<br/>`, however, since HTML5, it is preferable to omit the slash.
-
-	<img src="https://i.imgur.com/HeyHpUx.gif">
 	
 #### Elements
 - An **Element** consist of a *Tag* and its contents (if any), which may include other tags.<br>For example: `<p>Have a <span>great</span> day!</p>`
