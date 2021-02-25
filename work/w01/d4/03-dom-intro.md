@@ -112,6 +112,7 @@ The above scenario requires the app's JavaScript to:
 
 -  When the code loads, attach an event listener to the button element
 -  When that button is clicked, the event listener will need to:
+
   -  Access the text entered into the `<input>` element
   -  Create a new element, e.g. an `<li>`, and set it's content to that text
   -  Append the new element to its parent element, i.e., the `<ul>`
