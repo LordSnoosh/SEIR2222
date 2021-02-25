@@ -8,7 +8,7 @@ This lab will provide you some practice working with JavaScript objects, plus so
 
 This lab builds upon the `game` object that was started in the Intro to JS Objects lesson.
 
-This lab is a **deliverable** - when completed, please submit the link to your repl using the form referenced in the class repo's readme.
+This lab is a "stretch" lab, thus, it is **not a deliverable**.
 
 ## Setup
 
