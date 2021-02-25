@@ -110,13 +110,12 @@ For example, in a To Do app, the user types a new todo into an input, clicks a b
 
 The above scenario requires the app's JavaScript to:
 
--  When the code loads, attach an event listener to the button element
--  When that button is clicked, the event listener will need to:
-
-  -  Access the text entered into the `<input>` element
-  -  Create a new element, e.g. an `<li>`, and set it's content to that text
-  -  Append the new element to its parent element, i.e., the `<ul>`
-  -  For a better user experience (UX), "reset" the input by clearing out the current text
+- When the code loads, attach an event listener to the button element
+- When that button is clicked, the event listener will need to:
+  - Access the text entered into the `<input>` element
+  - Create a new element, e.g. an `<li>`, and set it's content to that text
+  - Append the new element to its parent element, i.e., the `<ul>`
+  - For a better user experience (UX), "reset" the input by clearing out the current text
 
 Most of the above steps requires that we use JS to select DOM elements!
 
