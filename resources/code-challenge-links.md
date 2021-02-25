@@ -17,7 +17,6 @@
 | Khawar |  |  |  |  |
 | Luis |  |  |  |  |
 | Paul |  |  |  |  |
-| Plamena |  |  |  |  |
 | Samuel |  |  |  |  |
 | Stuart |  |  |  |  |
 | Urian |  |  |  |  |
