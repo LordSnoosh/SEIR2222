@@ -102,10 +102,10 @@ Use DevTools to verify that the `<nav>` & `<div>` elements are block elements th
 
 ❓**Which element do we need to make the flex container?**
 
-<details><summary>
-The <code>&lt;nav></code> element and this is how we make it a Flexbox:
-</summary>
+<details><summary>❓Which element do we need to make the flex container?</summary>
 <p>
+
+The <code>&lt;nav></code> element and this is how we make it a Flexbox:
 
 ```css
 nav {
