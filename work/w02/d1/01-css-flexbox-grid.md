@@ -67,8 +67,6 @@ Flexbox excels at assisting devs with the following tasks:
 	
 - Spacing child elements within a container uniformly
 	
-- Making the height of child elements laid out in columns the same even though they have a different amount of content.
-
 ### Flexbox Fundamentals
 
 We use a CSS `display: flex;` declaration to make an element a **flex container**, for example: 
