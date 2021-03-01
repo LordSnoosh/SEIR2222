@@ -102,13 +102,19 @@ Use DevTools to verify that the `<nav>` & `<div>` elements are block elements th
 
 ❓**Which element do we need to make the flex container?**
 
-Now, let's make the `<nav>` a Flexbox:
+<details><summary>
+The <code>&lt;nav></code> element and this is how we make it a Flexbox:
+</summary>
+<p>
 
 ```css
 nav {
   display: flex;
 }
 ```
+
+</p>
+</details><br>
 
 Run again, and we can make the following observations:
 
@@ -172,6 +178,7 @@ nav {
   display: flex;
   flex-direction: row; /* default */
   justify-content: flex-start; /* default */
+  align-items: center; /* center vertically (cross-axis) */
   height: 50px;
   background-color: #a2cbb6;
 }
