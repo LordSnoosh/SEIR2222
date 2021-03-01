@@ -100,8 +100,6 @@ Run the Repl to check it out - definitely not what we're looking for - yet!
 
 Use DevTools to verify that the `<nav>` & `<div>` elements are block elements that take up all available width. We're getting an inside look at how repl.it does it's magic by using of an `<iframe>` element.
 
-❓**Which element do we need to make the flex container?**
-
 <details><summary>❓Which element do we need to make the flex container?</summary>
 <p>
 
