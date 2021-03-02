@@ -14,9 +14,8 @@
 | Define _prototype (instance)_ methods in a class |
 | Recognize _constructor functions_ (predecessor to classes) |
 | Define _static (class)_ methods |
-| Use _extends_ to create a _subclass_ |
+| Use _extends_ to implement _inheritance_ (create a _subclass_) |
 | Use _super_ within a subclass |
-
 
 ## The Use Case of <em>Classes</em>
 
