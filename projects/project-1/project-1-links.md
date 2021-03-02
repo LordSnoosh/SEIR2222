@@ -5,13 +5,13 @@
 | Aaron |  |  |  |
 | Allyn | Guess the Word |  |  |
 | Chase | Mancala |  |  |
-| Danny |  |  |  |
-| Danielle |  |  |  |
+| Danny | Minesweeper |  |  |
+| Danielle | Guess the Word |  |  |
 | Dave |  |  |  |
-| Diego |  |  |  |
+| Diego | Guess the Word |  |  |
 | Elliot |  |  |  |
-| Erwin |  |  |  |
-| Harrison |  |  |  |
+| Erwin | Mancala |  |  |
+| Harrison | Blackjack |  |  |
 | Jack | Checkers |  |  |
 | Khawar |  |  |  |
 | Luis |  |  |  |
