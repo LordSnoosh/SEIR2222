@@ -4,7 +4,7 @@
 |---|:---:|:---:|:---:|
 | Aaron |  |  |  |
 | Allyn |  |  |  |
-| Chase |  |  |  |
+| Chase | Mancala |  |  |
 | Danny |  |  |  |
 | Danielle |  |  |  |
 | Dave |  |  |  |
@@ -12,10 +12,10 @@
 | Elliot |  |  |  |
 | Erwin |  |  |  |
 | Harrison |  |  |  |
-| Jack |  |  |  |
+| Jack | Checkers |  |  |
 | Khawar |  |  |  |
 | Luis |  |  |  |
-| Paul |  |  |  |
+| Paul | Simon |  |  |
 | Samuel |  |  |  |
 | Stuart | War |  |  |
 | Urian |  |  |  |
