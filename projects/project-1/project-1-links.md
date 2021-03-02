@@ -17,7 +17,7 @@
 | Luis |  |  |  |
 | Paul |  |  |  |
 | Samuel |  |  |  |
-| Stuart |  |  |  |
+| Stuart | War |  |  |
 | Urian |  |  |  |
 | Xavier | War |  |  |
 
