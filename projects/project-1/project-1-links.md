@@ -3,7 +3,7 @@
 | Student | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|
 | Aaron |  |  |  |
-| Allyn |  |  |  |
+| Allyn | Guess the Word |  |  |
 | Chase | Mancala |  |  |
 | Danny |  |  |  |
 | Danielle |  |  |  |
