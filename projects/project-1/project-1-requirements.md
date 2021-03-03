@@ -11,7 +11,7 @@ Thanks to the amount of logic there is in a game, there's no better app than a g
 Everyone will get a chance to **be creative**, and work through some really **tough programming challenges**.  You got your feet wet
 with Tic-Tac-Toe, and we built a game during class - now it's time to step it up a notch.
 
-**You will be working individually for this project**. However, your instructors and instructor assistants will be guiding you along with up to ten 15-minute one-on-one sessions.
+**You will be working individually for this project**. However, your instructors and instructor assistants will be available for support via the support channel in Slack.  Please be sure to provide the details of the issue you are having - screenshots and relevant code are very helpful.
 
 As a reminder, GA has a zero plagiarism policy - your project's code **must be substantially yours**. **Do not copy code from similar projects or other sources**.  However, using  lines of code from  StackOverflow to accomplish general techniques/algorithms is okay - an example would be using StackOverflow as a source for code that replaces a character at a certain position in a string. 
 
