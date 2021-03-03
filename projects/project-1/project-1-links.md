@@ -9,7 +9,7 @@
 | Danielle | Guess the Word |  |  |
 | Dave | Blackjack |  |  |
 | Diego | Guess the Word |  |  |
-| Elliot |  |  |  |
+| Elliot | Battleship |  |  |
 | Erwin | Mancala |  |  |
 | Harrison | Blackjack |  |  |
 | Jack | Chess |  |  |
@@ -18,6 +18,6 @@
 | Paul | Simon |  |  |
 | Samuel |  |  |  |
 | Stuart | War |  |  |
-| Urian |  |  |  |
+| Urian | War |  |  |
 | Xavier | War |  |  |
 
