@@ -73,15 +73,15 @@ Those new to jQuery are best served by jQuery's newer [Learning Center](http://l
 
 Lets create an _index.html_ page inside of a project directory called _first-jquery_:
 
-With Terminal in a your daily working directory:
+In Terminal:
 
 ```
+cd ~/code
 mkdir first-jquery
 cd first-jquery
 touch index.html
+code .
 ```
-
-Then open the project directory in your code editor.
 
 ### HTML Boilerplate
 
