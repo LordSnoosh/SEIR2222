@@ -12,7 +12,7 @@
 | Elliot |  |  |  |
 | Erwin | Mancala |  |  |
 | Harrison | Blackjack |  |  |
-| Jack | Checkers |  |  |
+| Jack | Chess |  |  |
 | Khawar |  |  |  |
 | Luis |  |  |  |
 | Paul | Simon |  |  |
