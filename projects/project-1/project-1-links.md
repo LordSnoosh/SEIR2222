@@ -2,7 +2,7 @@
 
 | Student | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|
-| Aaron |  |  |  |
+| Aaron | Guess the Word |  |  |
 | Allyn | Guess the Word |  |  |
 | Chase | Mancala |  |  |
 | Danny | Minesweeper |  |  |
@@ -20,4 +20,3 @@
 | Stuart | War |  |  |
 | Urian | War |  |  |
 | Xavier | War |  |  |
-
