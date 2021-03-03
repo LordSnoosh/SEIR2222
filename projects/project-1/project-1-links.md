@@ -14,7 +14,7 @@
 | Harrison | Blackjack |  |  |
 | Jack | Chess |  |  |
 | Khawar |  |  |  |
-| Luis |  |  |  |
+| Luis | Guess the Word |  |  |
 | Paul | Simon |  |  |
 | Samuel |  |  |  |
 | Stuart | War |  |  |
