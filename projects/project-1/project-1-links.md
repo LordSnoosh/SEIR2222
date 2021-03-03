@@ -9,11 +9,11 @@
 | Danielle | Guess the Word |  |  |
 | Dave | Blackjack |  |  |
 | Diego | Guess the Word |  |  |
-| Elliot | Battleship |  |  |
+| Elliot | Guess the Word |  |  |
 | Erwin | Mancala |  |  |
 | Harrison | Blackjack |  |  |
 | Jack | Chess |  |  |
-| Khawar |  |  |  |
+| Khawar | Minesweeper |  |  |
 | Luis | Guess the Word |  |  |
 | Paul | Simon |  |  |
 | Samuel |  |  |  |
