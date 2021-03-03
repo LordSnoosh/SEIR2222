@@ -7,7 +7,7 @@
 | Chase | Mancala |  |  |
 | Danny | Minesweeper |  |  |
 | Danielle | Guess the Word |  |  |
-| Dave |  |  |  |
+| Dave | Blackjack |  |  |
 | Diego | Guess the Word |  |  |
 | Elliot |  |  |  |
 | Erwin | Mancala |  |  |
