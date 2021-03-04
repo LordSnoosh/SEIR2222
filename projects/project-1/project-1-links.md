@@ -16,7 +16,6 @@
 | Khawar | Minesweeper |  |  |
 | Luis | Guess the Word |  |  |
 | Paul | Simon |  |  |
-| Samuel |  |  |  |
 | Stuart | War |  |  |
 | Urian | War |  |  |
 | Xavier | War |  |  |
