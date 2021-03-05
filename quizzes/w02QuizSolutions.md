@@ -111,5 +111,5 @@ const numbers = [-90, -400, -234, -40000, -22, -50000000, -2];
 
 **Solution:**
 ```js
-const max = numbers.reduce((acc, val) => Math.max(acc, val), numbers[0]);
+const max = numbers.reduce((acc, val) => Math.max(acc, val));
 ```
