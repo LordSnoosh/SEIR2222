@@ -5,12 +5,12 @@
 | Aaron | Guess the Word | [link](https://github.com/awoodward6/projectOne) |  |
 | Allyn | Guess the Word |  |  |
 | Chase | Mancala | [link](https://github.com/chaseeanderson/MancalaGameCA/tree/main) |  |
-| Danny | Minesweeper |  |  |
+| Danny | Minesweeper | [link](https://github.com/danny-shindel/MineSweeper) |  |
 | Danielle | Guess the Word | [link](https://github.com/damartinez16/hang-man-project1) |  |
 | Dave | Blackjack |  |  |
 | Diego | Guess the Word | [link](https://github.com/DiegoRuiz06/First-Project) |  |
 | Elliot | Guess the Word | [link](https://github.com/elliothwang/snowman) |  |
-| Erwin | Mancala |  |  |
+| Erwin | Mancala | [link](https://github.com/erwinmedina/mancala) |  |
 | Harrison | Blackjack | [link](https://github.com/Harrison-Berek/blackjack) |  |
 | Jack | Chess | [link](https://github.com/jackhr/chess-project) |  |
 | Khawar | Minesweeper | [link](https://github.com/khawarrr/project1_minesweeper) |  |
