@@ -16,6 +16,6 @@
 | Khawar | Minesweeper | [link](https://github.com/khawarrr/project1_minesweeper) |  |
 | Luis | Guess the Word | [link](https://github.com/lhern026/GUESS_THE_WORD) |  |
 | Paul | Simon | [link](https://github.com/cloudpc7/project) |  |
-| Stuart | War |  |  |
+| Stuart | War | [link](https://github.com/StuK359/WarPlus) |  |
 | Urian | War |  |  |
 | Xavier | War |  |  |
