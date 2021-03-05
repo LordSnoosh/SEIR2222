@@ -12,8 +12,9 @@ Luckily, you've come to the right place!
 
 In SEI, it's not just about learning how to use languages, libraries and frameworks - it's also about learning how to organize and structure code to implement the features of a web app.
 
-This guide will help you with:
+This guide provides you with:
 
+- A process and data-centric approach that results in concise code, less bugs, and an app that is easier to add new features to.
 - How to start a project, and
 - How to organize/structure your code, in other words, how to "architect" your app.
 
@@ -115,7 +116,7 @@ The following diagram denotes one approach to structuring your code:
 	1. **Update all state impacted by the interaction**, then
 	2. **Update the DOM by calling `render()`**.
 
-## Suggested Steps to Get Started
+## Steps to Get Started on Your Browser Game
 
 The following approach has been proven to help students write complex front-end web apps, such as games.
 
@@ -133,34 +134,39 @@ If you're concerned that using the following approach will result in you and you
 	- Wireframes also help reveal an application's data (state) and functionality.
 
 4. **Pseudocode**
-	- Some of the app's features may need to be pseudocoded, that is, outlining the app's logic in a plain, informal way.
+	- Some of the app's features may need to be pseudocoded, that is, outlining the app's logic in a plain language way.
 	- Pseudocode the app's **overall** functionality first.
 	- More detailed pseudocode for a given feature may be required later.
 
-5. **Analyze the application's state (data)**
+5. **Identify the application's state (data)**
 	- What does the application need to "remember" throughout its execution?
-	- Use the wireframe(s), user stories and pseudocode to help determine what state needs to be tracked.
-	- Note that in an application with a database, we would analyze the database design during this step.
+	- Use the wireframe and pseudocode to help determine what state needs to be tracked.
 
 6. **Set up the project**
 	- Create project directory OUTSIDE of any existing git repo (nested repos cause problems).
-	- Create the starting project files. Here's a possible structure:
+	- Create the starting project files. Here's a good structure:
 		- **index.html**
 		- **css/main.css**
 		- **js/main.js**
-	- Create the HTML boilerplate within **index.html**.
+	- Create the HTML boilerplate within **index.html** using `![tab]`.
 	- Link **main.css** in the `<head>`.
-	- Loading **main.js** just above the closing `</body>` tag ensures that the DOM is ready before the script runs. Alternatively, if you want to put the script tag in the `<head>`, add a `defer` attribute as follows:<br>
-`<script defer src="js/main.js">`<br>Be sure to load libraries such as jQuery before the app's scripts.
+	- Add a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) tag to load the **main.js** in the `<head>` and be sure to use the `defer` attribute to ensure that the DOM is ready before the script runs:
+      ```
+      <script defer src="js/main.js"></script>
+      ```
 
 7. **Create a local repo**
-	- `$ git init`
-	- Create a remote repo in your GitHub account then follow the instructions that GitHub provides to add a remote to link your local repo to GitHub.
-	- It is recommended that the name of the repo and the project directory match.
+  - Make your project a local repo with `git init`.
+	- Create a remote repo in your **PERSONAL** GitHub account - be sure NOT to check the "Initialize this repository with a README" checkbox (you'll want to `touch README.md` locally).
+  - Run the command that the GitHub instructions provides to add the remote in your local repo.  It will look like this:
+    ```
+    git remote add origin <the URL to your repo>
+    ```
+  - It is recommended that the name of the repo and the project directory match.
 
 8. **Organize the app's JS into sections**
 
-	- Adding comments such as the following will help you organize your app's code:
+	- Copy/paste the following comment headings to help you organize your app's code:
 	<br>`/*----- constants -----*/`
 	<br>`/*----- app's state (variables) -----*/`
 	<br>`/*----- cached element references -----*/`
@@ -168,18 +174,17 @@ If you're concerned that using the following approach will result in you and you
 	<br>`/*----- functions -----*/`
 
 9. **Code away!**
-	- Iterating between adding HTML, CSS & JS is one approach.
-	- Start with some markup for the basic layout of the UI.
-	- Declare, but don't initialize, the application-wide variables (state). The initialization of the variables to their "start-up" state should be done within an `initialize`, or similarly named function, i.e., `init`, `reset`, etc.
+	- Start with some markup for the basic layout of the UI. If an element's content is going to come from the `render` function, you may want to temporarily add mock content to help with layout and styling, however, once the content is being provided by the `render` function, you should remove the mock content from the index.html.
+	- Declare, but don't initialize, the application-wide state variables. The initialization of the variables to their "initial" state should be done within an `initialize`, or similarly named function, e.g., `init`.
 	- Write that `initialize` function.
 	- Invoke `initialize()` to "kick off" the app.
-	- Next stub up a `render` function.  Be sure to call `render` after state has been updated in event handlers, the `initialize` function, etc. 
-	- Register event listeners - browser apps are typically _event-driven_.
-	- If you have user stories, code them in a logical order.
-
+  - Now that the `initialize` function has set the state variables, the last line in `initialize` should be `render();` to render the state to the DOM for the first time.
+	- Stub up that `render` function.
+  - After state has been updated in an event listener, the last line of code in the listener function should be a call to `render();` again, to render the state to the DOM.
+	- Register event listeners - be sure to use event delegation!
+	- Code the event listener(s)...
 
 10. **More recommendations for interactive browser app's, such as games**
-	- Create a main `render` function that is responsible for rendering the state of the app to the DOM.
 	- If the `render` function becomes lengthy, add additional rendering oriented functions, for example:
 	
 	```js
@@ -194,8 +199,8 @@ If you're concerned that using the following approach will result in you and you
 	}
 	```
 	- Avoid accessing the DOM from outside render-oriented functions. However, "eye candy" animations, a ticking time display, etc. are exceptions to this tip.
-	- **Data (state) is the single source of truth of the app** - when implementing an app's logic, the DOM is secondary to data manipulation. **Get used to thinking about how to your app's data changes vs. the display.**
-	- As the user interacts with the application (or other events such as timers trigger), code the app such that it:
+	- **Data (state) is the single source of truth of the app** - when implementing an app's logic, the DOM is secondary to data manipulation. **Get used to thinking about how state changes when the player interacts, e.g., clicks something.**
+	- Again, as the user interacts with the application code the event listener such that it:
 		- Updates state, then...
 		- Calls `render()`
 
