@@ -7,7 +7,7 @@
 | Chase | Mancala | [link](https://github.com/chaseeanderson/MancalaGameCA/tree/main) |  |
 | Danny | Minesweeper | [link](https://github.com/danny-shindel/MineSweeper) |  |
 | Danielle | Guess the Word | [link](https://github.com/damartinez16/hang-man-project1) |  |
-| Dave | Blackjack |  |  |
+| Dave | Blackjack | [link](https://github.com/LordSnoosh/sabacc-game-proj1) |  |
 | Diego | Guess the Word | [link](https://github.com/DiegoRuiz06/First-Project) |  |
 | Elliot | Guess the Word | [link](https://github.com/elliothwang/snowman) |  |
 | Erwin | Mancala | [link](https://github.com/erwinmedina/mancala) |  |
@@ -17,5 +17,5 @@
 | Luis | Guess the Word | [link](https://github.com/lhern026/GUESS_THE_WORD) |  |
 | Paul | Simon | [link](https://github.com/cloudpc7/project) |  |
 | Stuart | War | [link](https://github.com/StuK359/WarPlus) |  |
-| Urian | War |  |  |
+| Urian | War | [link](https://git.generalassemb.ly/urian/ProjectIWar) |  |
 | Xavier | War | [link](https://github.com/imthedude2351/FirstProject-War) |  |
