@@ -6,7 +6,7 @@
 | Allyn | Guess the Word | [link](https://github.com/awoodward6/projectOne) |  |
 | Chase | Mancala | [link](https://github.com/chaseeanderson/MancalaGameCA/tree/main) |  |
 | Danny | Minesweeper | [link](https://github.com/danny-shindel/MineSweeper) |  |
-| Danielle | Guess the Word | [link](https://github.com/damartinez16/hang-man-project1) |  |
+| Danielle | Guess the Word | [link](https://github.com/damartinez16/hangman-project1) |  |
 | Dave | Blackjack | [link](https://github.com/LordSnoosh/sabacc-game-proj1) |  |
 | Diego | Guess the Word | [link](https://github.com/DiegoRuiz06/First-Project) |  |
 | Elliot | Guess the Word | [link](https://github.com/elliothwang/snowman) |  |
