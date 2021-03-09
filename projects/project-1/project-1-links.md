@@ -2,7 +2,7 @@
 
 | Student | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|
-| Aaron | Guess the Word | [link](https://github.com/J-AaronLong/guess-the-word) |  |
+| Aaron | Guess the Word | [link](https://github.com/J-AaronLong/guess-the-word) | [link](https://j-aaronlong.github.io/guess-the-word/) |
 | Allyn | Guess the Word | [link](https://github.com/awoodward6/projectOne) | [link](https://awoodward6.github.io/guess-the-word/) |
 | Chase | Mancala | [link](https://github.com/chaseeanderson/MancalaGameCA/tree/main) | [link](https://chaseeanderson.github.io/MancalaGameCA/) |
 | Danny | Minesweeper | [link](https://github.com/danny-shindel/MineSweeper) | [link](https://danny-shindel.github.io/MineSweeper/) |
