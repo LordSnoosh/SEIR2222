@@ -21,6 +21,10 @@ Typical **static assets** include:
 - **javascript** files
 - **image** files
 
+## `master` or `main`
+
+If you have a `main` branch instead of a `master` branch, be sure to substitute all references to `master` below with `main`.
+
 ## Deploying with ghpages
 
 #### Ensure your project is ready to deploy
