@@ -3,19 +3,19 @@
 | Student | Game | GitHub | Deployed App |
 |---|:---:|:---:|:---:|
 | Aaron | Guess the Word | [link](https://github.com/J-AaronLong/guess-the-word) |  |
-| Allyn | Guess the Word | [link](https://github.com/awoodward6/projectOne) |  |
-| Chase | Mancala | [link](https://github.com/chaseeanderson/MancalaGameCA/tree/main) |  |
-| Danny | Minesweeper | [link](https://github.com/danny-shindel/MineSweeper) |  |
-| Danielle | Guess the Word | [link](https://github.com/damartinez16/hangman-project1) |  |
-| Dave | Blackjack | [link](https://github.com/LordSnoosh/sabacc-game-proj1) |  |
-| Diego | Guess the Word | [link](https://github.com/DiegoRuiz06/First-Project) |  |
-| Elliot | Guess the Word | [link](https://github.com/elliothwang/snowman) |  |
-| Erwin | Mancala | [link](https://github.com/erwinmedina/mancala) |  |
-| Harrison | Blackjack | [link](https://github.com/Harrison-Berek/blackjack) |  |
-| Jack | Chess | [link](https://github.com/jackhr/chess-project) |  |
-| Khawar | Minesweeper | [link](https://github.com/khawarrr/project1_minesweeper) |  |
-| Luis | Guess the Word | [link](https://github.com/lhern026/GUESS_THE_WORD) |  |
-| Paul | Simon | [link](https://github.com/cloudpc7/project) |  |
+| Allyn | Guess the Word | [link](https://github.com/awoodward6/projectOne) | [link](https://awoodward6.github.io/guess-the-word/) |
+| Chase | Mancala | [link](https://github.com/chaseeanderson/MancalaGameCA/tree/main) | [link](https://chaseeanderson.github.io/MancalaGameCA/) |
+| Danny | Minesweeper | [link](https://github.com/danny-shindel/MineSweeper) | [link](https://danny-shindel.github.io/MineSweeper/) |
+| Danielle | Guess the Word | [link](https://github.com/damartinez16/hangman-project1) | [link](https://damartinez16.github.io/hangman-project1/) |
+| Dave | Blackjack | [link](https://github.com/LordSnoosh/sabacc-game-proj1) | [link](https://lordsnoosh.github.io/blackjack/) |
+| Diego | Guess the Word | [link](https://github.com/DiegoRuiz06/First-Project) | [link](https://diegoruiz06.github.io/First-Project/) |
+| Elliot | Guess the Word | [link](https://github.com/elliothwang/snowman) | [link](https://elliothwang.github.io/snowman/) |
+| Erwin | Mancala | [link](https://github.com/erwinmedina/mancala) | [link](https://erwinmedina.github.io/mancala/) |
+| Harrison | Blackjack | [link](https://github.com/Harrison-Berek/blackjack) | [link](https://harrison-berek.github.io/blackjack/) |
+| Jack | Chess | [link](https://github.com/jackhr/chess-project) | [link](https://jackhr.github.io/chess-project/) |
+| Khawar | Minesweeper | [link](https://github.com/khawarrr/project1_minesweeper) | [link](https://khawarrr.github.io/project1_minesweeper/) |
+| Luis | Guess the Word | [link](https://github.com/lhern026/GUESS_THE_WORD) | [link](https://lhern026.github.io/GUESS_THE_WORD/) |
+| Paul | Simon | [link](https://github.com/cloudpc7/project) | [link](https://cloudpc7.github.io/project/) |
 | Stuart | War | [link](https://github.com/StuK359/WarPlus) | [link](https://stuk359.github.io/WarPlus/) |
 | Urian | War | [link](https://git.generalassemb.ly/urian/ProjectIWar) |  |
-| Xavier | War | [link](https://github.com/imthedude2351/FirstProject-War) |  |
+| Xavier | War | [link](https://github.com/imthedude2351/FirstProject-War) | [link](https://imthedude2351.github.io/FirstProject-War/) |
