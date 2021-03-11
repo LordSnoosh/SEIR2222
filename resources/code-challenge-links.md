@@ -3,7 +3,6 @@
 | Student | Link | Thru Unit 1 Progress<br>% of 10 | Thru Unit 2 Progress<br>% of 20 | Thru Unit 3 Progress<br>% of 30|
 |---|:---:|:---:|:---:|:---:|
 | Aaron | [link](https://git.generalassemb.ly/presstheeject/daily-js-code-challenges) | 20% |  |  |
-| Allyn | [link](https://git.generalassemb.ly/awoodward/daily-js-code-challenges) | 20% |  |  |
 | Chase | [link](https://git.generalassemb.ly/ceanders/daily-js-code-challenges) | 80% |  |  |
 | Danny | [link](https://git.generalassemb.ly/dshindel/daily-js-code-challenges) | 40% |  |  |
 | Danielle | [link](https://git.generalassemb.ly/damartinez16/daily-js-code-challenges) | 70% |  |  |
