@@ -4,7 +4,7 @@
 
 We'll be installing the following tools.
 
-- Rosetta
+- Slack
 - Homebrew
 - Xcode
 - VS Code
@@ -16,16 +16,15 @@ We'll be installing the following tools.
 - Django
 - Spectacle
 - Imgur
+- Zoom
 
-## Rosetta
+## Slack
 
-If you are one of the lucky few to have a new Mac with "Apple Silicon" (the new M1 chip), you'll need to install Rosetta which enables software designed for Intel processors to run on Apple Silicon machines...
+We will be using slack to communicate throughout the course. You will receive an invite to the relevant channels via e-mail. You can login via the web browser, but downloading / installing the app is highly recommended.
 
-**Only run the following command IF you have the M1 chip:**
+[Download Slack](https://slack.com/downloads)
 
-```
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
-```
+Remember to drag the Slack app into the Applications folder when you open the downloaded archive.
 
 ## Homebrew
 
@@ -94,9 +93,17 @@ brew install git
 
 You should have already opened a personal Github account, however, you need to have a General Assembly Github Enterprise account as well.  You can get one by signing up here:  [https://git.generalassemb.ly/join](https://git.generalassemb.ly/join)
 
+#### Configuring git to use VS Code as its Editor
+
+There will be a time when git needs info and automatically opens an editor.  The default editor used by git is usually vim or nano - and neither is very user friendly.  The following command will set git's editor to VS Code:
+
+```
+git config --global core.editor "code --wait" 
+```
+
 #### Configuring a Global git ignore
 
-> Note: This is **IMPORTANT**
+> Note: **THIS STEP IS CRITICAL**
 
 Everyone should have a global **git ignore** file so that you don’t have to worry about making the appropriate entries in a project’s git ignore.
 
@@ -108,7 +115,7 @@ Finally, lets put some good stuff in there by editing the newly created `.gitign
 
 1. `code ~/.gitignore_global` to open the file in VS Code
 
-2. Copy/paste the following:
+2. Copy/paste the following into `~/.gitignore_global`:
 
 	```sh
 	# This is a list of rules for ignoring files in every Git repositories on your computer.
@@ -215,6 +222,10 @@ Finally, lets put some good stuff in there by editing the newly created `.gitign
 	#######
 	*.pyc
 	__pycache__/
+
+  # Misc #
+  #######
+  .eslintcache
 	```
 
 3. Save the file.
@@ -393,6 +404,10 @@ This free "productivity" tool is invaluable when it comes to minimizing the time
 ## Installing Imgur
 
 Create an account on [imgur.com](https://imgur.com/) and install [mac2imgur](https://github.com/mileswd/mac2imgur) to ease uploading screenshots and other images from your computer to your imgur account.
+
+## Zoom
+
+[Download the Zoom client](https://zoom.us/download#client_4meeting) and install it.
 
 ## Update Your Shell to Show Repo Info
 
