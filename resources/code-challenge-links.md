@@ -9,7 +9,7 @@
 | Dave | [link](https://git.generalassemb.ly/lordsnoosh/daily-js-code-challenges) | 20% |  |  |
 | Diego | [link](https://git.generalassemb.ly/diegoruiz06/daily-js-code-challenges) | 0% |  |  |
 | Elliot | [link](https://git.generalassemb.ly/elliothwang/daily-js-code-challenges) | 130% |  |  |
-| Erwin | [link](https://git.generalassemb.ly/erwinmedina/daily-js-code-challenges) | 0% |  |  |
+| Erwin | [link](https://git.generalassemb.ly/erwinmedina/daily-js-code-challenges) | 170% |  |  |
 | Harrison | [link](https://git.generalassemb.ly/Harrison-Berek-EP/daily-js-code-challenges) | 80% |  |  |
 | Jack | [link](https://git.generalassemb.ly/jackhr/daily-js-code-challenges) | 110% |  |  |
 | Khawar | [link](https://git.generalassemb.ly/khawarrr/daily-js-code-challenges) | 20% |  |  |
