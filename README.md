@@ -60,7 +60,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
     </tr>
     <tr>
       <td align="center">5</td>
-      <td>Promises<br>Consuming APIs<br>Authentication using OAuth<br>User-Centric CRUD<br>Regular Expressions</td>
+      <td>Promises<br>Consuming APIs<br>Authentication using OAuth<br>User-Centric CRUD<br>Regular Expressions<br>Computer Science</td>
     </tr>
     <tr>
       <td align="center">6</td>
