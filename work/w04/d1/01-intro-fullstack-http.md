@@ -12,7 +12,6 @@
 | Identify the Two Key Components of an HTTP Request |
 | Explain How HTTP Requests Can be Initiated From a Browser |
 | Explain How HTTP Requests Result in Code Running on a Server |
-| Describe a Process for Building a Full-stack App |
 
 ## Road Map
 
