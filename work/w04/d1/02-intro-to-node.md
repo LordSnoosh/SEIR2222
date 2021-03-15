@@ -411,13 +411,13 @@ Create a module named `random.js`:
 
 1. That has a function **assigned** to the `module.exports` object.
 2. The function should define two parameters, `min` & `max`.
-3. The function shouuld return a random number, as an integer, between `min` & `max`, inclusive.
+3. The function should return a random number, as an integer, between `min` & `max`, inclusive.
 4. Test the module in `main.js` like this:
 	
 	```js
 	const random = require('./utilities/random');
 	for (let i = 0; i < 10; i++) {
-	console.log( random(100, 200) );
+	  console.log( random(100, 200) );
 	}
 	```
 
