@@ -239,7 +239,10 @@ Until we get to Unit 4, our apps will rely on the user clicking links and submit
 
 4. The purpose of a defined route is to map an HTTP request to code which is typically a function defined in the "controller" module.  The controller function would perform any necessary data operations, etc.
 
-5. The controller function ultimately responds with a new HTML page (or a redirect, which we'll learn about soon enough).
+5. The controller function ultimately responds with an HTTP Response which can either:
+  
+  - Containing an HTML page in the message body (in the case of a GET request)
+  - Or, with a Status Code of 302 (Redirect), make the browser issue a new GET request.
 
 ### ❓ Essential Questions
 
