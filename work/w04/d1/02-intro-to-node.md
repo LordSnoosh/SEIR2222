@@ -50,14 +50,9 @@
 
 - In addition to being used to build high-performance web applications, Node is also a great tool for building command-line tools.
 
-- Node is an open source project governed by the [Node.js Foundation](https://foundation.nodejs.org/) with board representation from companies such as:
-  - PayPal
-  - Microsoft
-  - Google
-  - GoDaddy
-  - IBM
-  - Red Hat
-  - Intel
+- Node is an open source project governed by the [OpenJSFoundation/Node.js Foundation](https://foundation.nodejs.org/) with board representation from companies such as:
+
+  <img src="https://i.imgur.com/8fZqO3E.png">
 
 - Node is very "lightweight", i.e., only low-level "core" modules for networking, filesystem access, etc. are baked-in.
 
