@@ -414,7 +414,7 @@ Since we need a router for our **todos** resource and don't need the **routes/us
 
 In a web application that follows the MVC architectural pattern, **controllers**:
 
-- Handle the request coming from the client (browswer).
+- Handle the request coming from the client (browser).
 - Use Models to perform CRUD (create, retrieve, update & delete) data operations.
 - Implement any additional application logic, often relying on other services and utility modules; and
 - Pass data to Views to be rendered then return the resulting markup to the browser.
@@ -459,7 +459,7 @@ In a web application that follows the MVC architectural pattern, **controllers**
 	  });
 	}
 	```
-	> A common approach is to export an object near the top because you don't have to scroll to the bottom of the module to see what functionaly is being exported.
+	> A common approach is to export an object near the top because you don't have to scroll to the bottom of the module to see what functionality is being exported.
 
 - Yup, the controller is going to need to require that Todo model:
 
