@@ -233,7 +233,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 ```
 
-> **IMPORTANT KEY POINT:** The path specified in `app.use` is **prepended** to the paths specified in the router object forming the actual path of the defined route...
+> **IMPORTANT KEY POINT:** The path specified in `app.use` is **prepended** to the paths specified in the router object forming the actual path of the defined route.  Think of the above paths as a "starts with path".
 
 ### Determining the Actual Path of a Route Defined in a Router Object
 
@@ -253,6 +253,7 @@ and is mounted like this:
 ```js
 const todosRouter = require('./routes/todos');
 
+// All routes defined in todosRouter will start with /todos
 app.use('/todos', todosRouter);
 ```
 
@@ -378,13 +379,13 @@ Since we need a router for our **todos** resource and don't need the **routes/us
 
 	/* GET users listing. */
 	router.get('/', function(req, res, next) {
-	res.send('respond with a resource');
+	  res.send('respond with a resource');
 	});
 	```
 	and add the following comment to remind us of how the router was mounted:
 
 	```js
-	// All actual paths begin with "/todos"
+	// All actual paths start with "/todos"
 	```
 
 - We now want to define the route for the To-Dos **index** functionality (show all To-Dos).  However, we are not going to write an anonymous inline function for the route handler.  Instead, we are going to follow a best practice of putting the function in a controller module that can export any number of controller actions (functions).
