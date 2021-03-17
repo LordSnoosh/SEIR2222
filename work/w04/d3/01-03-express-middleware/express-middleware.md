@@ -186,7 +186,7 @@ Here's a great flow to follow when you want to add functionality to your web app
 
 1. Identify the "proper" Route (HTTP Method + Path)
 
-2. Create the UI that issues a request that matches that route.
+2. Create the UI (`<a>` or `<form>`) that will send an HTTP request that matches that route.
 
 3. Define the route on the server and map it to a controller action.
 
