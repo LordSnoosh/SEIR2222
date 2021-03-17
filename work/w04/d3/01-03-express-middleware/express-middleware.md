@@ -520,8 +520,8 @@ _As a User, when viewing the show page for a To-Do, I want to be able to click a
 
 - Follow the same steps we followed multiple times for adding functionality!
 - Be sure to reference the Routing Chart to determine the proper routes!
-- Your users will expect to have the data they want to edit pre-filled in the form's inputs. Use the `value` attribute and some EJS to pull this off.
-- Don't forget that the controller action will first have to get the To-Do being edited (using the `Todo` model) and provide it to the view so that the above hint can be done.
+- Your users will expect to have the data they want to edit pre-filled in the form's inputs. Use EJS squids to assign the current value of the todo to the input's `value` attribute. Don't forget the double-quotes though outside of the squids.
+- In order to pull off the above hint, the controller action will first have to get the To-Do being edited (using the `Todo` model's `getOne` method) and provide it to the view.
 
 #### Exercise #2:
 
@@ -531,8 +531,8 @@ _As a User, when editing a To-Do, I want to be able to toggle whether or not it'
 
 - Use an `<input type="checkbox" ...>`
 - Checkboxes are checked when a `checked` attribute exists (no value is assigned).
-- Use a ternary expression to write in the `checked` attribute, or an empty string.
-- If the checkbox is checked when submitted, `req.body.done` will have the value of `"on"`, otherwise there won't even be a `req.body.done` property.
+- Use squids and a ternary expression to emit into the input a `checked` attribute, or an empty string.
+- If the checkbox is checked when submitted, `req.body.done` will have the value of `"on"`, otherwise there won't even be a `req.body.done` property thanks to the crazy way HTML checkboxes were designed to work back in the day.
 
 ##### Have fun and enjoy the challenge!
 
