@@ -15,6 +15,6 @@
 | Khawar | Minesweeper | [link](https://github.com/khawarrr/project1_minesweeper) | [link](https://khawarrr.github.io/project1_minesweeper/) |
 | Luis | Guess the Word | [link](https://github.com/lhern026/GUESS_THE_WORD) | [link](https://lhern026.github.io/GUESS_THE_WORD/) |
 | Paul | Simon | [link](https://github.com/cloudpc7/project) | [link](https://cloudpc7.github.io/project/) |
-| Stuart | War | [link](https://github.com/StuK359/WarPlus) | [link](https://stuk359.github.io/WarPlus/) |
+| Stuart | Guess the Word | [link](https://github.com/StuK359/MonsterPortal) | [link](https://stuk359.github.io/MonsterPortal/) |
 | Urian | War | [link](https://github.com/saiyan626/War-with-HAL9000) | [link](https://saiyan626.github.io/War-with-HAL9000/) |
 | Xavier | War | [link](https://github.com/imthedude2351/FirstProject-War) | [link](https://imthedude2351.github.io/FirstProject-War/) |
