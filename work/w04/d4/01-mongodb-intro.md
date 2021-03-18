@@ -152,13 +152,41 @@ Using a collection for the first time creates it!
 
 __YOU DO: Let's add another person to the _people_ collection. But this time, add an additional field called _birthDate_ and assign it a date value with something like this: *birthDate: new Date('3/21/1981')*__
 
+---
+
 To list all documents in a collection, we can use the _find_ method on the collection:
 
 ```
 > db.people.find({})
 ```
 
-The argument is called a _query object_ and is used to specify criteria.  If we provide an empty query object, `find` will return all documents:
+The argument is called a _query object_ and is used to specify criteria.  If we provide an empty query object, `find` will return all documents.
+
+---
+
+If we wanted to find a document in the people collection with a `name` property of "Jeff", we can use the _find_ method on the collection like this:
+
+```
+> db.people.find({ name: "Jeff" })
+```
+
+---
+
+We can also use the _findOneAndUpdate_ method to find a document in the collection, then update some or all of its properties:
+
+```
+> db.people.findOneAndUpdate({ name: "Jeff" }, { $set: { name: "Chris" } })
+```
+
+> Note: By default, the _findOneAndUpdate_ method will return the original document that was updated
+
+---
+
+Lastly, you can use the _findOneAndDelete_ method to find a document and delete it from the collection:
+
+```
+> db.people.findOneAndDelete({ name: "Jeff" })
+```
 
 ## Data Modeling - Intro
 
