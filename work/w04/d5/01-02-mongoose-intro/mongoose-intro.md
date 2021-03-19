@@ -410,8 +410,8 @@ When we build out CRUD functionality in most web apps, here is the process we wi
 1. Determine the "proper" route (HTTP Method & Endpoint).  Use RESTful conventions whenever possible.
 2. Add the UI (link and/or form) that will trigger the HTTP request that matches the route.
 3. Define the route in the appropriate router module that will match the HTTP request and map it to the `<controller>.<method>` that will perform the desired functionality.
-4. Add the controller action/method and be sure to export it.
-5. In the controller, perform necessary CRUD and either `render` (passing it data) in the case of a `GET` request, or `redirect` if data has been mutated (`POST`, `PUT` & `DELETE`). If rendering, code the view template if necessary.
+4. Add and code the controller action/function to perform any necessary CRUD, etc. and be sure to export it.
+5. In the controller, in the case of a `GET` request, respond with `res.render` (optionally passing data to the view). Or, when data has been mutated (`POST`, `PUT` & `DELETE`) use a `res.redirect`. If rendering, code the view template if necessary.
 
 #### Creating Data is sometimes a two-request process...
 
@@ -484,15 +484,17 @@ module.exports = router;
 	}
 	```
 
-#### Step 5 - Code the controller action/method and create the view
+#### Code the controller action/method
 
-The code in the `new` action is pretty simple:
+There's no CRUD to perform in this `new` action, we just need to render a **new.ejs**:
 
 ```js
 function newMovie(req, res) {
   res.render('movies/new');
 }
 ```
+
+#### Step 5 -  Create the View
 
 Now we need the `new.ejs` view.
 
@@ -567,7 +569,7 @@ router.get('/new', moviesCtrl.new);
 router.post('/', moviesCtrl.create);
 ```
 
-#### Step 4 - Add the controller action/method and be sure to export it
+#### Step 4 - Add and code the controller action/method and be sure to export it
 
 The next step is to stub up and export that `create` controller action in **controllers/movies.js**:
 
@@ -581,8 +583,6 @@ function create(req, res) {
 
 }
 ```
-
-#### Step 5 - Code the controller action/method
 
 We're going to be using our `Movie` model, so we need to require it at the top:
 
@@ -612,6 +612,10 @@ function create(req, res) {
 ```
 
 Questions?
+
+#### Step 5 -  Redirect
+
+We've already coded the `redirect` above and have no view to code.
 
 #### Test the `create` Functionality 
 
