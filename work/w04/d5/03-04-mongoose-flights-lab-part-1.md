@@ -73,7 +73,7 @@ FYI, future lessons will expand upon the `mongoose-movies` project, and the labs
 
 ## Deliverable?
 
-### The final version of `mongoose-flights` (parts 1 thru 2 combined) will be a deliverable, so do each part and don't fall behind.
+### The final version of `mongoose-flights` (parts 1 thru 3 combined) will be a deliverable - don't fall behind.
 
 Please create a repo named `mongoose-flights` and commit your code.
 
