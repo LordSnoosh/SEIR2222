@@ -463,7 +463,7 @@ module.exports = router;
 
 **💪 YOU DO (5 minutes)**
 
-- Pair up and stub up the controller and export the `new` action - we did this quite a bit yesterday...(look below only if you must)
+- Stub up the controller and export the `new` action - we did this quite a few times already...(look below only if you must)
 
 1. Create the `controllers/movies.js` module.
 
