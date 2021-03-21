@@ -50,7 +50,7 @@
 
 ## Review the Starter Code
 
-As you can see, a navigation bar and a bit of styling has been added since the last lesson.
+As you can see, a navigation bar and a bit of styling has been added since the previous lesson.
 
 However, the changes are more than skin deep...
 
