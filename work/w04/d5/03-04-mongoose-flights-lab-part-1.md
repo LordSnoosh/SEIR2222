@@ -59,9 +59,10 @@ FYI, future lessons will expand upon the `mongoose-movies` project, and the labs
 		const newFlight = new Flight();
 		// Obtain the default date
 		const dt = newFlight.departs;
-		// Format the date for the value attribute of the input
-		const departsDate = dt.toISOString().slice(0, 16);
-		res.render('flights/new', {departsDate});
+	  // Format the date for the value attribute of the input
+    let departsDate = `${dt.getFullYear()}-${(dt.getMonth() + 1).toString().padStart(2, '0')}`;
+    departsDate += `-${dt.getDate().toString().padStart(2, '0')}T${dt.toTimeString().slice(0, 5)}`;
+	  res.render('flights/new', {departsDate});
 		```
 
 2. Code these additional User Stories:
