@@ -21,7 +21,7 @@ Similar to what we did in the lesson, in this lab you'll be adding functionality
 
 ## Goal
 
-The goal of this lab is to add the ability to specify the `airport` that the flight is originating from; and a list (array) of `destinations` for the flight - if the flight is non-stop, then there will be only one destination sub-doc in the array.
+The goal of this lab is to add the ability to specify a list (array) of `destinations` for the flight - if the flight is non-stop, then there will be only one destination sub-doc in the array.
 
 Styling is secondary, spend time on it only after the functionality has been implemented.
 
@@ -34,20 +34,17 @@ Styling is secondary, spend time on it only after the functionality has been imp
 	| `airport`| `String`| `enum` to include<br>'AUS', 'DFW', 'DEN', 'LAX' & 'SAN' | n/a |
 	| `arrival`| `Date`| n/a | n/a | 
 
-2. Add the following two additional properties to the `Flight` Model:
+2. Add the following two additional property to the `Flight` Model:
 
 	| Property | Type | Validations | Default Value |
 	|---|---|---|---|
-	| `airport`| `String`| `enum` to include<br>'AUS', 'DFW', 'DEN', 'LAX' & 'SAN' | 'DEN' | 
 	| `destinations`| `[destinationSchema]`| n/a | n/a | 
 
-3. Modify the form for inputting a _flight_ to add a `<select name="airport">` element to include a value for the new _flight_ document's `airport` property. Ensure that there are `<option>` elements for the four allowable airport codes ('AUS', 'DFW', etc.).
+3. Implement the following User Story:<br>_AAU, when viewing the list of flights, I want to click on a "detail" link displayed next to each flight to view all of the properties for that flight (`show` view)_
 
-4. Implement the following User Story:<br>_AAU, when viewing the list of flights, I want to click on a "detail" link displayed next to each flight to view all of the properties for that flight (`show` view)_
+4. Implement the following User Story:<br>_AAU, when viewing the details page (`show` view) for a flight, I want to be able to add a destination for that flight, including its `arrival` date/time & one of the established airport codes_
 
-5. Implement the following User Story:<br>_AAU, when viewing the details page (`show` view) for a flight, I want to be able to add a destination for that flight, including its `arrival` date/time & one of the established airport codes_
-
-6. Implement the following User Story:<br>_AAU, when viewing the details page (`show` view) for a flight, I want to see a list of that flight's `destinations` (`airport` & `arrival`)_
+5. Implement the following User Story:<br>_AAU, when viewing the details page (`show` view) for a flight, I want to see a list of that flight's `destinations` (`airport` & `arrival`)_
 
 
 ## Bonuses
