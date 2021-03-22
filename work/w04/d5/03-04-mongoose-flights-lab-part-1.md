@@ -55,15 +55,14 @@ FYI, future lessons will expand upon the `mongoose-movies` project, and the labs
 	2. Just like any other data you want to access/display in a view template, that data needs to be passed by the controller action when it calls `res.render`, however…
 	3. Although an input of `type="datetime-local"` will display a date assigned to its `value` attribute, that date value needs to be formatted as a string matching this format: `yyyy-MM-ddThh:mm` (yes, a “T” character is used to separate the date portion from the time portion).  One way of obtaining the properly formatted string is to use the `toISOString()` method and use `slice()` to return only the first 16 characters, for example:<br>
 
-		```js
-		const newFlight = new Flight();
-		// Obtain the default date
-		const dt = newFlight.departs;
-	  // Format the date for the value attribute of the input
+    ```js
+    const newFlight = new Flight();
+    // Obtain the default date
+    const dt = newFlight.departs;
     let departsDate = `${dt.getFullYear()}-${(dt.getMonth() + 1).toString().padStart(2, '0')}`;
     departsDate += `-${dt.getDate().toString().padStart(2, '0')}T${dt.toTimeString().slice(0, 5)}`;
-	  res.render('flights/new', {departsDate});
-		```
+    res.render('flights/new', {departsDate});
+    ```
 
 2. Code these additional User Stories:
 	- AAU, I want to view the list of flights by departure date in ascending order.
