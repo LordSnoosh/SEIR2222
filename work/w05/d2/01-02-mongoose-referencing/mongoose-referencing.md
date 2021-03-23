@@ -46,7 +46,17 @@ Mongoose will have a problem if it expects an ObjectId and gets a string instead
 
 We will use a Node REPL to update the data and the [Perform CRUD Using Mongoose Models in a Node REPL](https://gist.github.com/jim-clark/57b646abbb6c0ce09f9fa948eab6febc) guide can help us. 
 
-> Note. All forms/views and controller actions that relied on the cast being an array of strings has been removed and/or adjusted in the starter code accordingly. 
+> Note. All forms/views and controller actions that relied on the cast being an array of strings has been removed and/or adjusted in the starter code accordingly.
+
+Here's the Mongoose statement that will update the `cast` property of all movie documents to an empty array:
+
+```js
+Movie.updateMany(
+  {},  // Query object determines which docs to update
+  {cast: []},  // Update object has properties to update
+  function(err, result) {console.log(result)}
+);
+```
 
 ## Review the Starter Code
 
