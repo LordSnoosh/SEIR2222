@@ -449,6 +449,7 @@ Multiple requests can be chained as follows:
 // other code above
 
 fetch(`${rootURL}users/${username}`, options)
+  .then(res => res.json())
   .then(userData => {
     // return the promise to be handled by the next .then
     return fetch(userData.repos_url, options);
@@ -473,6 +474,7 @@ Be careful doing the following refactor, some names have been changed to protect
 
 let userData;
 fetch(`${rootURL}users/${username}`, options)
+  .then(res => res.json())
   .then(user => {
     userData = user;
     // return the promise to be handled by the next .then
