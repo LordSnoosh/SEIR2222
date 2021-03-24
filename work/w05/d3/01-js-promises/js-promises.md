@@ -38,7 +38,7 @@ Students Will Be Able To:
 	```sh
 	$ git pull upstream master
 	```
-1. `cd` into the<br>`.../work/w05b/d1/01-js-promises/starter-code/mongoose-movies` folder.
+1. `cd` into the<br>`.../work/w05/d3/01-js-promises/starter-code/mongoose-movies` folder.
 
 1. Open the `mongoose-movies` folder in your code editor.
 
