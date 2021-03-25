@@ -152,11 +152,11 @@ function allBooks(req, res) {
   let bookQuery = req.query.name ? {name: new RegExp(req.query.name, 'i')} : {};
   Book.find(bookQuery, function(err, books) {
     // Why not reuse the books/index template?
-	  res.render('/books/index', {
-	    books,
-	    user: req.user,  // should use middleware instead (see below)
-	    nameSearch: req.query.name  // use to set content of search form
-	  });
+    res.render('/books/index', {
+      books,
+      user: req.user,  // should use middleware instead (see below)
+      nameSearch: req.query.name  // use to set content of search form
+    });
   });
 }
 ```
