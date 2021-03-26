@@ -11,7 +11,7 @@
 | Erwin | Liverpool Fan Page | [link](https://github.com/erwinmedina/liverpool-cafe) | [link](https://trello.com/b/WkXsHhrY/liverpool-fan-page-project-2) |  |
 | Harrison | Cooking With Cody | [link](https://github.com/Harrison-Berek/cooking-with-cody) | [link](https://trello.com/b/ZLxxiXpv/recipes) |  |
 | Jack | Playlists | [link](https://github.com/jackhr/project-playlist) | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) |  |
-| Khawar |  |  |  |  |
+| Khawar |  |  | [link](https://trello.com/b/htoOxizX/ga-project-2-men-app) |  |
 | Luis | Is It Lit | [link](https://github.com/lhern026/is-it-lit) | [link](https://trello.com/b/hRJS7cRO/see-soccer-live-user-stories) |  |
 | Stuart | LandPicChat | [link](https://github.com/StuK359/PicChat) | [link](https://trello.com/b/zGvrG35u/landpicchat) |  |
 | Urian | LendingBox | [link](https://github.com/Saiyan626/Lending-Box) | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) |  |
