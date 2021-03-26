@@ -4,7 +4,7 @@
 |---|:---:|:---:|:---:|:---:|
 | Chase | Wine List | [link](https://github.com/chaseeanderson/project-wine-list) | [link](https://trello.com/b/TrvKP0ac/ga-project-2-web-app-wine-list) |  |
 | Danny | Movie List | [link](https://github.com/danny-shindel/movie-list) | [link](https://trello.com/b/Jo64MYwg/project-2) |  |
-| Danielle | BookBlab |  | [link](https://trello.com/b/8RupqJQf/bookblab) |  |
+| Danielle | BookBlab | [link](https://github.com/damartinez16/book-blab) | [link](https://trello.com/b/8RupqJQf/bookblab) |  |
 | Dave | Eberron Offer Up | [link](https://github.com/LordSnoosh/eberron-offerup) | [link](https://trello.com/b/ppZ7Cw0w/seir-project-2) |  |
 | Diego |  |  |  |  |
 | Elliot |  |  |  |  |
