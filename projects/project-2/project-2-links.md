@@ -2,17 +2,17 @@
 
 | Student | Project Name | GitHub | Planning (Trello) | Hosted Site |
 |---|:---:|:---:|:---:|:---:|
-| Chase |  |  |  |  |
+| Chase | Wine List |  | [link](https://trello.com/b/TrvKP0ac/ga-project-2-web-app-wine-list) |  |
 | Danny |  |  |  |  |
-| Danielle |  |  |  |  |
-| Dave |  |  |  |  |
+| Danielle | BookBlab |  | [link](https://trello.com/b/8RupqJQf/bookblab) |  |
+| Dave | Book a Mercenary |  | [link](https://trello.com/b/ppZ7Cw0w/seir-project-2) |  |
 | Diego |  |  |  |  |
 | Elliot |  |  |  |  |
-| Erwin |  |  |  |  |
-| Harrison |  |  |  |  |
-| Jack |  |  |  |  |
+| Erwin | Liverpool Fan Page |  | [link](https://trello.com/b/WkXsHhrY/liverpool-fan-page-project-2) |  |
+| Harrison | Recipes |  | [link](https://trello.com/b/ZLxxiXpv/recipes) |  |
+| Jack | Playlists |  | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) |  |
 | Khawar |  |  |  |  |
 | Luis |  |  |  |  |
-| Stuart |  |  |  |  |
-| Urian |  |  |  |  |
-| Xavi |  |  |  |  |
+| Stuart | LandPicChat |  | [link](https://trello.com/b/zGvrG35u/landpicchat) |  |
+| Urian | LendingBox |  | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) |  |
+| Xavi | Cerveza, Bière, and Beer |  | [link](https://trello.com/b/MuUKJJYK/cerveza-bi%C3%A8re-and-beer) |  |
