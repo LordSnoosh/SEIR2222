@@ -9,7 +9,7 @@
 | Diego | ??? | [link](https://github.com/DiegoRuiz06/Project-2) |  |  |
 | Elliot | Custom Guitar | [link](https://github.com/elliothwang/guitar-builder) | [link](https://trello.com/b/mIYNFe2G/ga-project-2) |  |
 | Erwin | Liverpool Fan Page | [link](https://github.com/erwinmedina/liverpool-cafe) | [link](https://trello.com/b/WkXsHhrY/liverpool-fan-page-project-2) |  |
-| Harrison | Recipes |  | [link](https://trello.com/b/ZLxxiXpv/recipes) |  |
+| Harrison | Cooking With Cody | [link](https://github.com/Harrison-Berek/cooking-with-cody) | [link](https://trello.com/b/ZLxxiXpv/recipes) |  |
 | Jack | Playlists | [link](https://github.com/jackhr/project-playlist) | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) |  |
 | Khawar |  |  |  |  |
 | Luis |  |  | [link](https://trello.com/b/hRJS7cRO/see-soccer-live-user-stories) |  |
