@@ -13,6 +13,6 @@
 | Jack | Playlists | [link](https://github.com/jackhr/project-playlist) | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) |  |
 | Khawar |  |  |  |  |
 | Luis |  |  | [link](https://trello.com/b/hRJS7cRO/see-soccer-live-user-stories) |  |
-| Stuart | LandPicChat |  | [link](https://trello.com/b/zGvrG35u/landpicchat) |  |
+| Stuart | LandPicChat | [link](https://github.com/StuK359/PicChat) | [link](https://trello.com/b/zGvrG35u/landpicchat) |  |
 | Urian | LendingBox |  | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) |  |
 | Xavi | Cerveza, Bière, and Beer | [link](https://github.com/imthedude2351/CervezaBiereBeer) | [link](https://trello.com/b/MuUKJJYK/cerveza-bi%C3%A8re-and-beer) |  |
