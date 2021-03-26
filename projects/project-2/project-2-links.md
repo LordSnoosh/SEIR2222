@@ -15,4 +15,4 @@
 | Luis |  |  |  |  |
 | Stuart | LandPicChat |  | [link](https://trello.com/b/zGvrG35u/landpicchat) |  |
 | Urian | LendingBox |  | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) |  |
-| Xavi | Cerveza, Bière, and Beer |  | [link](https://trello.com/b/MuUKJJYK/cerveza-bi%C3%A8re-and-beer) |  |
+| Xavi | Cerveza, Bière, and Beer | [link](https://github.com/imthedude2351/CervezaBiereBeer) | [link](https://trello.com/b/MuUKJJYK/cerveza-bi%C3%A8re-and-beer) |  |
