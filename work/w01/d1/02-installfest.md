@@ -224,7 +224,6 @@ Finally, lets put some good stuff in there by editing the newly created `.gitign
 	__pycache__/
 
   # Misc #
-  #######
   .eslintcache
 	```
 
