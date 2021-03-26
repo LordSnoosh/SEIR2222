@@ -225,6 +225,7 @@ __pycache__/
 
 # Misc #
 .eslintcache
+
 ```
 
 3. Save the file.
