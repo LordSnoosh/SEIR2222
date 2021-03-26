@@ -7,7 +7,7 @@
 | Danielle | BookBlab | [link](https://github.com/damartinez16/book-blab) | [link](https://trello.com/b/8RupqJQf/bookblab) |  |
 | Dave | Eberron Offer Up | [link](https://github.com/LordSnoosh/eberron-offerup) | [link](https://trello.com/b/ppZ7Cw0w/seir-project-2) |  |
 | Diego | ??? | [link](https://github.com/DiegoRuiz06/Project-2) |  |  |
-| Elliot |  |  |  |  |
+| Elliot | Custom Guitar |  | [link](https://trello.com/b/mIYNFe2G/ga-project-2) |  |
 | Erwin | Liverpool Fan Page | [link](https://github.com/erwinmedina/liverpool-cafe) | [link](https://trello.com/b/WkXsHhrY/liverpool-fan-page-project-2) |  |
 | Harrison | Recipes |  | [link](https://trello.com/b/ZLxxiXpv/recipes) |  |
 | Jack | Playlists | [link](https://github.com/jackhr/project-playlist) | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) |  |
