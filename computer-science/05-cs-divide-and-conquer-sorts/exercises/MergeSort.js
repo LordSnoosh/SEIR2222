@@ -1,8 +1,6 @@
 function mergeSort(arr) {
   // YOUR CODE HERE
-  if (arr.length <= 1) return arr;
-  let leftHalf = arr.splice(0, arr.length / 2);
-  return merge(mergeSort(leftHalf), mergeSort(arr));
+
 }
 
 
