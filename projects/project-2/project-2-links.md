@@ -7,7 +7,7 @@
 | Danielle | BookBlab | [link](https://github.com/damartinez16/book-blab) | [link](https://trello.com/b/8RupqJQf/bookblab) | [link](https://book-blab.herokuapp.com/) |
 | Dave | Eberron Offer Up | [link](https://github.com/LordSnoosh/eberron-offerup) | [link](https://trello.com/b/ppZ7Cw0w/seir-project-2) | [link](https://eberron-offerup.herokuapp.com/) |
 | Diego | Anime Forum | [link](https://github.com/DiegoRuiz06/Project-2) | [link](https://trello.com/b/IEgzPDEU/project-2-anime-chat-forum) |  |
-| Elliot | Custom Guitar | [link](https://github.com/elliothwang/guitar-builder) | [link](https://trello.com/b/mIYNFe2G/ga-project-2) |  |
+| Elliot | Custom Guitar | [link](https://github.com/elliothwang/guitar-builder) | [link](https://trello.com/b/mIYNFe2G/ga-project-2) | [link](https://acustom-guitar.herokuapp.com/) |
 | Erwin | Liverpool Fan Page | [link](https://github.com/erwinmedina/liverpool-cafe) | [link](https://trello.com/b/WkXsHhrY/liverpool-fan-page-project-2) | [link](https://liverpool-cafe.herokuapp.com/) |
 | Harrison | Cooking With Cody | [link](https://github.com/Harrison-Berek/cooking-with-cody) | [link](https://trello.com/b/ZLxxiXpv/recipes) | [link](https://cooking-with-cody.herokuapp.com/) |
 | Jack | Playlists | [link](https://github.com/jackhr/project-playlist) | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) | [link](https://playlist-the-project.herokuapp.com/) |
