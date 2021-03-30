@@ -3,7 +3,7 @@
 | Student | Project Name | GitHub | Planning (Trello) | Hosted Site |
 |---|:---:|:---:|:---:|:---:|
 | Chase | Wine List | [link](https://github.com/chaseeanderson/project-wine-list) | [link](https://trello.com/b/TrvKP0ac/ga-project-2-web-app-wine-list) | [link](https://project-wine-list.herokuapp.com/) |
-| Danny | Movie List | [link](https://github.com/danny-shindel/movie-list) | [link](https://trello.com/b/Jo64MYwg/project-2) |  |
+| Danny | Movie List | [link](https://github.com/danny-shindel/movie-list) | [link](https://trello.com/b/Jo64MYwg/project-2) | [link](https://kinospisok.herokuapp.com/) |
 | Danielle | BookBlab | [link](https://github.com/damartinez16/book-blab) | [link](https://trello.com/b/8RupqJQf/bookblab) | [link](https://book-blab.herokuapp.com/) |
 | Dave | Eberron Offer Up | [link](https://github.com/LordSnoosh/eberron-offerup) | [link](https://trello.com/b/ppZ7Cw0w/seir-project-2) | [link](https://eberron-offerup.herokuapp.com/) |
 | Diego | Anime Forum | [link](https://github.com/DiegoRuiz06/Project-2) | [link](https://trello.com/b/IEgzPDEU/project-2-anime-chat-forum) |  |
