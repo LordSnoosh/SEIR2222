@@ -54,6 +54,7 @@ Click [here](https://devcenter.heroku.com/articles/heroku-cli#download-and-insta
 
 Once the Heroku CLI is installed, type `heroku login` anywhere in terminal and follow the instructions to log in using your Heroku account's credentials.
 
+You can check the status/expiration of your auth token by running `heroku auth:token`.
 
 ## Deploy the App!
 
@@ -61,7 +62,7 @@ Once the Heroku CLI is installed, type `heroku login` anywhere in terminal and f
 
 > If you haven't already done so, please ensure that you are in your project folder from this point forward.
 
-### Create the App in your Heroku Dashboard
+### Creating the App in Your Heroku Account
 
 Your [Heroku Dashboard](https://dashboard.heroku.com/apps) lists all of your apps that have been deployed to Heroku.
 
@@ -71,7 +72,7 @@ Before you can deploy a new app, you must first create the app and using the CLI
 $ heroku create <optional preferred name of app>
 ```
 
-If you don't specify the `<optional preferred name of app>` argument, Heroku will assign a randomly generated app name automatically.
+You definitely want to supply a preferred name of your app because it will be used to form your app's public URL.  If you don't specify the `<optional preferred name of app>` argument, Heroku will assign a randomly generated app name automatically.
 
 Keep in mind that there are thousands upon thousands of apps deployed on Heroku, so you may have to get creative when giving your app a name because it has to be unique to Heroku. Using hyphens is one way to help get the app name/URL you want.
 
@@ -96,11 +97,11 @@ $ git remote -v
 
 You should see a remote name `heroku` listed, if it wasn't, try `heroku create` again with another name.
 
-### Ensure the Code is Committed to `master`
+### Ensure the Code is Committed to `main`
 
-Deploying to Heroku is as easy as pushing the `master` branch to the remote named `heroku`.
+Deploying to Heroku is as easy as pushing the `main` (or `master`) branch to the remote named `heroku`.
 
-First, make sure your code is committed (on the `master` branch):
+First, make sure your code is committed:
 
 ```
 $ git add -A
@@ -110,7 +111,7 @@ $ git commit -m "Deploy to Heroku"
 Then push the repo to Heroku:
 
 ```
-$ git push heroku master
+$ git push heroku main
 ```
 
 The above command will kick off the deployment on Heroku which may take a minute or two to complete.
@@ -147,7 +148,7 @@ Multiple key:value pairs can be space separated, or the command can be run as ma
 
 > Note:  If using zsh, it may be necessary to quote the KEY=VALUE pair, for example:<br>`heroku config:set "DATABASE_URL=mongodb+srv://username:pw@cluster0-oxnsb.azure.mongodb.net/mongoose-movies?retryWrites=true&w=majority"`
 
-**IMPORTANT**
+**IMPORTANT!**
 
 For deployments using OAuth, be sure to use your Heroku app's hostname, **not** `localhost:3000` when setting the callbacks URL.  For example, this was the command used to set the Google OAuth callback for _mongoose-movies_:
 
@@ -200,6 +201,10 @@ Since the proper setting of environment variables is a common source of problems
 ```
 $ heroku config
 ```
+
+As in Unit 1, another cause of the deployed app failing is a mismatch of the casing of a folder/module versus when the module is required - the deployed app is case-sensitive, while locally it's not. Please refer to the GitHub Pages Deployment lesson in week 3 for details and how to fix this problem.
+
+Lastly, an error in your CSS's syntax, e.g., a missing semi-colon, won't error locally, however, it will cause an error during deployment.
   
 
 
