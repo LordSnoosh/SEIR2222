@@ -12,7 +12,7 @@
 | Harrison | Cooking With Cody | [link](https://github.com/Harrison-Berek/cooking-with-cody) | [link](https://trello.com/b/ZLxxiXpv/recipes) | [link](https://cooking-with-cody.herokuapp.com/) |
 | Jack | Playlists | [link](https://github.com/jackhr/project-playlist) | [link](https://trello.com/b/kNMdNzqr/they-call-me-mello-trello) | [link](https://playlist-the-project.herokuapp.com/) |
 | Khawar | Memes | [link](https://github.com/khawarrr/meme-project2) | [link](https://trello.com/b/htoOxizX/ga-project-2-men-app) |  |
-| Luis | Is It Lit | [link](https://github.com/lhern026/is-it-lit) | [link](https://trello.com/b/hRJS7cRO/see-soccer-live-user-stories) |  |
+| Luis | Is It Lit | [link](https://github.com/lhern026/is-it-lit) | [link](https://trello.com/b/hRJS7cRO/see-soccer-live-user-stories) | [link](https://is-it-lit-sei.herokuapp.com/) |
 | Stuart | LandPicChat | [link](https://github.com/StuK359/PicChat) | [link](https://trello.com/b/zGvrG35u/landpicchat) | [link](https://picchat-landscape-edition.herokuapp.com/photos) |
 | Urian | LendingBox | [link](https://github.com/Saiyan626/Lending-Box) | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) |  |
 | Xavi | Cerveza, Bière, and Beer | [link](https://github.com/imthedude2351/CervezaBiereBeer) | [link](https://trello.com/b/MuUKJJYK/cerveza-bi%C3%A8re-and-beer) |  |
