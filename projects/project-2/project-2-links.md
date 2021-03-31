@@ -14,5 +14,5 @@
 | Khawar | Memes | [link](https://github.com/khawarrr/meme-project2) | [link](https://trello.com/b/htoOxizX/ga-project-2-men-app) | [link](https://sei-meme.herokuapp.com/) |
 | Luis | Is It Lit | [link](https://github.com/lhern026/is-it-lit) | [link](https://trello.com/b/hRJS7cRO/see-soccer-live-user-stories) | [link](https://is-it-lit-sei.herokuapp.com/) |
 | Stuart | LandPicChat | [link](https://github.com/StuK359/PicChat) | [link](https://trello.com/b/zGvrG35u/landpicchat) | [link](https://picchat-landscape-edition.herokuapp.com/photos) |
-| Urian | LendingBox | [link](https://github.com/Saiyan626/Lending-Box) | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) |  |
+| Urian | LendingBox | [link](https://github.com/Saiyan626/Lending-Box) | [link](https://trello.com/b/0JtYIJDo/project-ii-lendingbox) | [link](https://lendingbox.herokuapp.com/) |
 | Xavi | Cerveza, Bière, and Beer | [link](https://github.com/imthedude2351/CervezaBiereBeer) | [link](https://trello.com/b/MuUKJJYK/cerveza-bi%C3%A8re-and-beer) | [link](https://cerveza-biere-beer.herokuapp.com/) |
