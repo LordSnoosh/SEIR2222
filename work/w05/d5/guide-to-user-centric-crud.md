@@ -121,7 +121,7 @@ function update(req, res) {
     {new: true},
     function(err, book) {
       if (err || !book) return res.redirect('/books');
-      res.redirect(`books/${book._id}`);
+      res.redirect(`/books/${book._id}`);
     }
   );
 }
@@ -229,13 +229,17 @@ function update(req, res) {
 
 A form used to delete a data resource needs to use a query string to inform method-override middleware to change the post to a DELETE request.
 
-Also, note that the proper RESTful route passes the `_id` of the comment, not the book that it's embedded within:
+Note how we can use an `if` statement to render the delete form only if the comment was created by the logged in user:
 
 ```html
-<form action="/comments/<%= comment._id %>?_method=DELETE" method="POST">
-  <button type="submit">DELETE COMMENT</button>
-</form>
+<% if (comment.userId.equals(user._id) { %>
+  <form action="/comments/<%= comment._id %>?_method=DELETE" method="POST">
+    <button type="submit">DELETE COMMENT</button>
+  </form>
+<% } %>
 ```
+
+Also, note that the proper RESTful route passes the `_id` of the comment, not the book that it's embedded within.
 
 However, you'll only want to render the above form if the comment was created by the logged in user - you don't want users deleting each other's comments! Here's how you can conditionally render the delete comment form for only the comments created by the logged in user:
 
