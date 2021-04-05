@@ -6,7 +6,7 @@
 | Danny | Movie List | [link](https://github.com/danny-shindel/movie-list) | [link](https://trello.com/b/Jo64MYwg/project-2) | [link](https://kinospisok.herokuapp.com/) |
 | Danielle | BookBlab | [link](https://github.com/damartinez16/book-blab) | [link](https://trello.com/b/8RupqJQf/bookblab) | [link](https://book-blab.herokuapp.com/) |
 | Dave | Eberron Offer Up | [link](https://github.com/LordSnoosh/eberron-offerup) | [link](https://trello.com/b/ppZ7Cw0w/seir-project-2) | [link](https://eberron-offerup.herokuapp.com/) |
-| Diego | Anime Forum | [link](https://github.com/DiegoRuiz06/Meal-Tracker) | [link](https://trello.com/b/sEJOaaSb/calorie-tracker) |  |
+| Diego | Job Hunter | [link](https://github.com/DiegoRuiz06/Project-2-Crud-App) |  |  |
 | Elliot | Custom Guitar | [link](https://github.com/elliothwang/guitar-builder) | [link](https://trello.com/b/mIYNFe2G/ga-project-2) | [link](https://acustom-guitar.herokuapp.com/) |
 | Erwin | Liverpool Fan Page | [link](https://github.com/erwinmedina/liverpool-cafe) | [link](https://trello.com/b/WkXsHhrY/liverpool-fan-page-project-2) | [link](https://liverpool-cafe.herokuapp.com/) |
 | Harrison | Cooking With Cody | [link](https://github.com/Harrison-Berek/cooking-with-cody) | [link](https://trello.com/b/ZLxxiXpv/recipes) | [link](https://cooking-with-cody.herokuapp.com/) |
