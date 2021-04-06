@@ -30,6 +30,8 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 
 <img src="https://i.imgur.com/B5CZSuT.png">
 
+> Note: You can rename a branch, e.g., `master`, to another name, e.g., `main` as follows:  `git checkout master`, then `git branch -m main` 
+
 **Manager** & **Programmer**:
 
 1. Frequently ensure that you have the most recently merged code on your local computer:
