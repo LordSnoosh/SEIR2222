@@ -18,4 +18,4 @@ It is a requirement to complete at least **80%** of the following to to receive:
 | Thu 03/04 | [Array Iterator Methods Lab](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w02/d4/03-array-methods-lab.md) | Mon 03/08 |
 | Tue 03/16 & Wed 03/17 | Express "Dev Skills" [Part 1](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w04/d2/03-04-dev-skills-lab-part-1.md) & [Part 2](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w04/d3/04-dev-skills-lab-part-2.md) Labs | Fri 03/19 |
 | Fri 03/19, Mon 03/22 & Tue 03/23 | Mongoose "Flights" [Part 1](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w04/d5/03-04-mongoose-flights-lab-part-1.md), Part 2 & Part 3 Labs | Fri 03/26 |
-
+| Tue 04/06 | [Python Control Flow Lab](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w07/d2/03-control-flow-lab.md) | Thu 04/08 |
