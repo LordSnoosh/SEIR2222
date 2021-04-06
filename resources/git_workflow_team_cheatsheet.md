@@ -62,8 +62,8 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 1. `git checkout main`
 2. Now you can `git pull upstream main`. **Note: Managers will always use `origin` in place of `upstream`.**
 3. Now the new commit(s) in `main` need to be brought into your feature branch so that you are always developing with the latest and greatest code:
-  - `git checkout <feature_branch_name>`
-  - `git merge main`
+    - `git checkout <feature_branch_name>`
+    - `git merge main`
 4. Good job! Continue development!  If there was a merge conflict due to more than one team member making changes to the same file - see below on how to resolve.
 
 ## Minimizing Merge Conflicts
