@@ -76,7 +76,8 @@
 
 #### Exercise 8
 
-- Using the tuple `foods` and list comprehension within a `for` loop, print each food string that contains the letter `a`.
+- Use a `for` loop to iterate over a list comprehension that filters the  `foods` tuple to only include food strings that contains the letter `a`.
+- Within the `for` loop, print each food string.
 
 ## Solutions
 
