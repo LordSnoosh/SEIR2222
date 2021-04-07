@@ -42,6 +42,8 @@
 
 - Using a `for` loop, print just the last two food strings from `foods`.
 
+  > Hint:  Use the slice operator to select the last two foods
+
 #### Exercise 4
 
 - Create a dictionary named `home_town` containing the keys of `city`, `state` and `population`.
@@ -54,7 +56,9 @@
 #### Exercise 6
 
 - Create an empty list named `cohort`.
-- Using a `for` loop, add one dictionary to the `cohort` list for each student name. Each dictionary should have this shape:
+- Using a `for` loop to iterate over the `students` list.
+  > Hint: Use the `enumerate` function to provide both the index & student
+- Within the `for` loop, add a dictionary to the `cohort` list that combines the student's name and the food in the `foods` list at the same index. Each dictionary will have this shape:
 
 	```python
 	{
@@ -62,7 +66,8 @@
 	  'fav_food': 'Cheeseburger'
 	}
 	```
-- Iterate over `cohort` printing out each element.
+- Iterate over `cohort` printing out each item.
+
 
 #### Exercise 7
 
