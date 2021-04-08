@@ -29,11 +29,10 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 5. `cd` into the newly created project folder.
 6. Now add a link to the manager's repo as well using the URL provided by the manager: `git remote add upstream <paste the URL>`. You can also go back to the manager's repo, click the green `[Code]` button and copy the https URL.
     > Note: The URL provided by the manager should be look something like `https://github.com/MANAGER_USERNAME/THE_REPOSITORY.git`.  
-7. Add a remote (conventionally named `upstream`) that points to the manager's repo:  `git remote add upstream <paste the URL>`
-8. Ensure that you have two remotes named `origin` & `upstream`: `git remote -v`.
+7. Ensure that you have two remotes named `origin` & `upstream`: `git remote -v`.
     > Note: The manager will only have an `origin` remote.
-9. To be notified of when the manager has updated the `main` branch by merging pull requests, browse to the **manager's repo**, click the **Watch** button near the top right of the page and choose **All Activity**. 
-10. Go back to your fork and make sure your GitHub account's notification settings are adjusted to notify you via email, etc. Your notification settings can be accessed by clicking your avatar, clicking **Settings**, and selecting **Notifications** in the sidebar.
+8. To be notified of when the manager has updated the `main` branch by merging pull requests, browse to the **manager's repo**, click the **Watch** button near the top right of the page and choose **All Activity**. 
+9. Go back to your fork and make sure your GitHub account's notification settings are adjusted to notify you via email, etc. Your notification settings can be accessed by clicking your avatar, clicking **Settings**, and selecting **Notifications** in the sidebar.
 
 Congrats, the project's repos are ready to rock!
 
