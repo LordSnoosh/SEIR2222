@@ -6,67 +6,160 @@ To help illustrate collaborating on a project using Git/GitHub, consider the fol
 
 **Programmers** will contribute code and issue pull requests, while **managers** integrate the code by merging the pull requests into the repo.
 
-### Creating the Repo (One-time Setup)
+## Creating the Repo (One-time Setup)
 
 **Manager**:
 
 1. Create a repo (using the name of the project) on GitHub (personal account).
-2. Click the repo's green `[Code]` button and copy the https URL.
+2. Copy the repo's URL shown in the **Quick setup** section.
 3. `cd ~/code` then clone the repo `git clone <paste the URL>`.
 4. `cd` into the newly created project folder and run `git remote -v` to verify that you have a remote named `origin`.
+5. So that the repo is no longer "empty", let's create the README:  `touch README.md`
+6. Make a commit:  `git add -A && git commit -m "Add README"`
+7. If the default branch is `master`, let's rename it to `main`: `git branch -m main`
+8. Push to the remote for the first time:  `git push -u origin main`
+9. Now let's get the rest of the team (the Programmers) set up.
 
 **Programmer**:
 
 1. Browse to the manager's GH repo using the link they provide.
-2. Fork the repo to your own account (it will open in a browser tab).
+2. Click the `[Fork]` button near the top-right to fork the repo to your own account (it will replace the Manager's repo in the same browser tab).
 3. Click the repo's green `[Code]` button and copy the https URL.
 4. `cd ~/code` then clone the repo `git clone <paste the URL>`.
 5. `cd` into the newly created project folder.
-6. Now add a link to the manager's repo as well using the URL provided by the manager: `git remote add upstream <paste the URL>`.  FYI, the URL provided by the manager should be look something like `https://github.com/MANAGER_USERNAME/THE_REPOSITORY.git`.
-7. Ensure that you have two remotes named `origin` & `upstream`: `git remote -v`
-8. Ensure you are notified of changes to the project by clicking the **Watch** button near the top right of the **manager's repo**.  Then make sure your GitHub account's notification settings are adjusted to notify you via email, etc.
+6. Now add a link to the manager's repo as well using the URL provided by the manager: `git remote add upstream <paste the URL>`. You can also go back to the manager's repo, click the green `[Code]` button and copy the https URL.
+    > Note: The URL provided by the manager should be look something like `https://github.com/MANAGER_USERNAME/THE_REPOSITORY.git`.  
+7. Add a remote (conventionally named `upstream`) that points to the manager's repo:  `git remote add upstream <paste the URL>`
+8. Ensure that you have two remotes named `origin` & `upstream`: `git remote -v`.
+    > Note: The manager will only have an `origin` remote.
+9. To be notified of when the manager has updated the `main` branch by merging pull requests, browse to the **manager's repo**, click the **Watch** button near the top right of the page and choose **All Activity**. 
+10. Go back to your fork and make sure your GitHub account's notification settings are adjusted to notify you via email, etc. Your notification settings can be accessed by clicking your avatar, clicking **Settings**, and selecting **Notifications** in the sidebar.
 
-### Working on Feature Branches
+Congrats, the project's repos are ready to rock!
+
+## Create "Feature" Branches
+
+When working in a team, it's rarely acceptable to make commits on the `main`/`master` branch because they are typically considered to be the production/deployed branch.
+
+Instead, team members (manager and programmers) work on a separate "feature" branch.  A feature branch _can_ be created for each new feature, however, to simplify your workflow, we ask that each team member create and develop on a single feature branch created using their name.
+
+Please create and checkout (switch to) your feature branch - no spaces are allowed in the name of the branch:
+
+```
+git checkout -b <yourname>
+```
+
+The above command equivalent to the following two commands:
+
+```
+git branch <yourname>
+git checkout <yourname>
+```
+
+When we create a new branch, that branch will contain the exact same commits as the current branch you are in.  You can verify this by typing `git log` and verify that the current commit is pointed to by both your feature branch and the `main` branch (as well as the remote's ref):
+
+```
+commit bf0e90b563cb9448b0624d14376ffd7829b11454 (HEAD -> <yourname>, origin/main, main)
+```
+
+Now that all team members have their feature branches created, you are ready to start coding!
+
+## Working on Feature Branches
+
+IMPORTANT:  All team members make commits on their feature branch - so be sure that your feature branch is checked-out prior to running the `git commit...` command.
+
+### Example Manager Contribution Workflow
+
+1. Let's say the manager adds a new file to the project:
+
+    ```
+    touch file1.txt
+    ```
+
+2. The "work" is done and it's time to get this amazing new file to the other team members. **Again, before making a commit, verify that you are on your feature branch prior to making a commit**:
+
+    ```
+    git add -A
+    git commit -m "Add file1.txt"
+    ```
+
+3. Time to push the feature branch to the remote (`origin` is the only remote the manager will have):
+
+    ```
+    git push origin <yourname>
+    ```
+
+4. When a feature branch is pushed to the manager's repo, a **[Compare & pull request]** button will appear.  A **pull request** is the mechanism used to merge code from a feature branch into the main branch.  Click the button, verify the branches look correct, type a comment, and click the **[Create pull request]** button:
+
+    <img src="https://i.imgur.com/mNOhro5.png">
+
+5. The manager will now see a **[Merge pull request]** button - click it and confirm to merge the new commit(s) in the feature branch into the `main` branch.
+
+6. All team members should be developing with the latest codebase/commits! Therefore the manager should inform (don't rely on the programmers getting notified by GH) that new commit(s) have been added to the `main` branch and that they need to be pulled into their local projects...
+
+7. All team members will checkout the `main` branch and pull the updates:
+
+    ```
+    git checkout main
+    ```
+    > Note:  You may see a message that "Your branch is up to date with 'origin/main' - this is a lie.
+    ```
+    git pull origin main
+    ```
+    > IMPORTANT:  Programmers will use `upstream` in place of `origin`
+
+8. All team members need to merge the new commits now in `main` into their feature branches:
+
+    ```
+    git checkout <yourname>
+    git merge main
+    ```
+    Now you're set to continue development!
+    > Note:  It's really fun to see the project/files in VS Code respond to the changes in the codebase!
+
+Congrats, you've completed the team workflow for when the manager has made a contribution.  When programmers make a contribution, the process is very similar...
+
+### Example Programmer Contribution Workflow
+
+1. Let's say a programmer adds a new file to the project:
+
+    ```
+    touch file2.txt
+    ```
+    and adds some text, e.g., "Line 1", to the first file, `file1.txt`.
+
+2. The "work" is done and it's time to get this sweet like bear meat code to the other team members. **Again, before making a commit, verify that you are on your feature branch prior to making a commit**:
+
+    ```
+    git add -A
+    git commit -m "Add text to file1.txt and add file2.txt"
+    ```
+
+3. Time to push the feature branch to the **programmer's remote repo** (it's not possible to push to repos for which they have not been added as contributors):
+
+    ```
+    git push origin <yourname>
+    ```
+
+4. The programmer will then browse to their repo (fork) and click the **[Compare & pull request]** button.  The next steps to issue a pull request are the same as in the manager's Step 4. After the **[Create pull request]** button is clicked, please let the manager know that you've issued a pull request.
+
+5. The **manager** will now see that a pull request exists and will click the **Pull requests** menu:
+
+    <img src="https://i.imgur.com/PIl4Z8q.png">
+
+6. On the next screen that the **manager** sees, they will select the pending pull request that they wish to merge:
+
+    <img src="https://i.imgur.com/V3MB6YY.png">
+
+7. The manager can now see a **[Merge pull request]** button - click it and confirm to merge the new commit(s) in the feature branch into the `main` branch.
+
+**Now follow the Manager Example's Steps 6 through 8 again to ensure that all team members are developing with the latest and greatest code.**
+
+## Workflow Summary
+
+The following diagram summarizes the above workflow:
 
 <img src="https://i.imgur.com/B5CZSuT.png">
-
-> Note: You can rename a branch, e.g., `master`, to another name, e.g., `main` as follows:  `git checkout master`, then `git branch -m main` 
-
-**Manager** & **Programmer**:
-
-1. Frequently ensure that you have the most recently merged code on your local computer:
-	- Checkout the `main` branch with `git checkout main`. **Only
-   pull when you are on `main`.**
-	- Now you can `git pull upstream main`. **Note: Managers will always use `origin` in place of `upstream`.**
-2. **Use a feature branch** with `git checkout <feature_branch_name>`;
-   add `-b` to create a new branch if necessary. In SEI, most students will use their name as the name of the branch. **You should never write code while in the `main` branch**.
-3. Write some code!
-4. **When you have completed a feature or want to get your amazing code on your team's computers:**
-	- Commit your code as usual...
-   	- `git add -A` and `git push origin <feature_branch_name>`
-5. On **your** GitHub repo's page (if you're a programmer, this will be your fork), find and click the Pull Request button.
-6. FYI, multiple commits are grouped within a single open pull request.
-7. Go back to step #3.
-
-### Accepting and Merging A Pull Request into the `main` Branch
-
-**Manager**:
-
-1. If GitHub states that the pull request can be merged automatically - do it!
-2. If GitHub states there will be conflicts, and the merge is smallish, it is still possible to merge online by following the instructions.
-3. If the request is very comprehensive and may cause plenty of merge conflicts, the manager may decide to test and merge the pull request locally/manually by clicking **command line instructions** and following the steps listed.
-4. After a merge, ensure that all team members pull the recent changes into their local repo **ASAP!**.
-
-### When New Code Has Been Merged - Every Team Member Needs to Merge it Locally
-
-**Manager & Programmers:**
-
-1. `git checkout main`
-2. Now you can `git pull upstream main`. **Note: Managers will always use `origin` in place of `upstream`.**
-3. Now the new commit(s) in `main` need to be brought into your feature branch so that you are always developing with the latest and greatest code:
-    - `git checkout <feature_branch_name>`
-    - `git merge main`
-4. Good job! Continue development!  If there was a merge conflict due to more than one team member making changes to the same file - see below on how to resolve.
 
 ## Minimizing Merge Conflicts
 
