@@ -68,7 +68,7 @@ class Dog():
     new_doggo.age = age
 ```
 
-``Solution: Heck yes, self is the conventional for the parameter that will be used to reference the other properties and methods within that object, but since it is just the first parameter, you can call it whatever you want. ``
+``Solution: Heck yes, self is the conventional name for the parameter that will be used to reference the other properties and methods within that object, but since it is just the first parameter, you can call it whatever you want. ``
 
 9. What method is called by Python whenever a new instance of a class is created?
 
