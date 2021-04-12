@@ -298,7 +298,7 @@ from django.db import models
 from django.urls import reverse
 ```
 
-We've covered all of the fundamentals of class-based views above so we'll be a little more brief while adding the functionality to delete and update cats by combining their steps together...
+Before moving on to Update & Delete operations, here's a few review questions...
 
 ### ❓ Review Questions - Creating Data with a CBV
 
@@ -308,14 +308,14 @@ We've covered all of the fundamentals of class-based views above so we'll be a l
 
 3. **True or False:  In the case of a GET request, a `CreateView` automatically renders a template matching this format<br>`templates/<name of app>/<name of model>_form.html`**
 
-
-
 ## 5. Updating & Deleting Data Using a CBV
 
 Here are the user stories we want to implement:
 
 - _AAU, when viewing a cat's detail page, I want to click EDIT to update that cat's information._
 - _AAU, when viewing a cat's detail page, I want to click DELETE to remove that cat from the database._
+
+We've covered all of the fundamentals of class-based views above so we'll be a little more brief while adding the functionality to delete and update cats by combining their steps together...
 
 #### Add the Routes
 
@@ -459,7 +459,7 @@ As usual, your lab is to implement the same class-based views in you Finch Colle
 
 1. **To be more productive, Class-based Views can be used in lieu of ______ __________.**
 
-2. **What generic class do we extend to create our own CBV for creating model instances?**
+2. **What generic class do we extend with our own CBV for deleting model instances?**
 
 3. **What class attribute must we provide to every CBV to inform the CBV what Model its for?**
 
