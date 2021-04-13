@@ -17,9 +17,10 @@
 3. Many-to-Many Relationships in RDBMs
 4. Many-to-Many Relationship in Django
 5. Implement the Cat & Toy Association in Cat Collector
-6. Lab Assignment
-7. Practice Exercise
-8. Further Study
+6. Refactoring the `CatCreate` CBV
+7. Lab Assignment
+8. Practice Exercise
+9. Further Study
 
 ## 1. Set Up
 
@@ -71,7 +72,7 @@ After you're done, let's take a look at the `Toy`-related Django modules in `mai
 - **urls.py**
 - **views.py**
 
-Go ahead and create a few toys so that you have them to assign to cats later. Here are some toys 9 out of 10 cats enjoy:
+Go ahead and create a few toys so that you have them to assign to cats later. Here are some toys that 9 out of 10 cats enjoy:
 
 ```
 Bouncy Mouse / Blue
@@ -253,7 +254,7 @@ Fun stuff!  Exit the shell by typing `control + D` or `exit()`
 
 _As a User, when viewing the detail page of a cat, I want to see a list of toys the cat has._
 
-_As a User, when viewing the detail page of a cat, I want to be able to add a toy to from a list of toys that the cat doesn't already have._
+_As a User, when viewing the detail page of a cat, I want to be able to add a toy from a list of toys that the cat doesn't already have._
 
 ### Displaying a List of Associated Toys
 
@@ -405,17 +406,30 @@ The above code is similar to that we used when testing out the relationship in t
 
 Congrats on implementing a many-to-many relationship between cats and toys!
 
-## 6. Lab Assignment
+## 6. Refactoring the `CatCreate` CBV
+
+If you browse to **Add a Cat**, you'll notice that the form has an input for the new cat's "toys".  To prevent this input from showing, we should refactor the `fields` attribute of the `CatCreate` CBV as follows:
+
+```python
+# views.py
+
+class CatCreate(CreateView):
+  model = Cat
+  # fields = '__all__'
+  fields = ['name', 'breed', 'description', 'age']
+```
+
+## 7. Lab Assignment
 
 Lab time is to be spent implementing the same feature in your Finch Collector project :)
 
-## 7. Practice Exercise
+## 8. Practice Exercise
 
 Implement the following user story:
 
 _AAU, when viewing the detail page for a cat, I want to be able to remove a toy for that cat_
 
-## 8. Further Study
+## 9. Further Study
 
 Although Django automatically creates a "hidden" join table to implement a many-to-many relationship, there are times where it would be beneficial to be able to add additional attributes to that join table.
 

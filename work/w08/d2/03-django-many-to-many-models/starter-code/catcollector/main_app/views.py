@@ -3,18 +3,9 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
 from .models import Cat, Toy
 from .forms import FeedingForm
+from datetime import date
 
-class CatCreate(CreateView):
-  model = Cat
-  fields = ['name', 'breed', 'description', 'age']
-
-class CatUpdate(UpdateView):
-  model = Cat
-  fields = ['breed', 'description', 'age']
-
-class CatDelete(DeleteView):
-  model = Cat
-  success_url = '/cats/'
+# View functions
 
 def home(request):
   return render(request, 'home.html')
@@ -31,12 +22,23 @@ def cats_detail(request, cat_id):
   # instantiate FeedingForm to be rendered in the template
   feeding_form = FeedingForm()
   return render(request, 'cats/detail.html', {
-    # pass the cat and feeding_form as context
-    'cat': cat, 'feeding_form': feeding_form
+    'cat': cat,
+    'feeding_form': feeding_form
   })
 
+class CatCreate(CreateView):
+  model = Cat
+  fields = '__all__'
+
+class CatUpdate(UpdateView):
+  model = Cat
+  fields = ['breed', 'description', 'age']
+
+class CatDelete(DeleteView):
+  model = Cat
+  success_url = '/cats/'
+
 def add_feeding(request, cat_id):
-	# create the ModelForm using the data in request.POST
   form = FeedingForm(request.POST)
   # validate the form
   if form.is_valid():
