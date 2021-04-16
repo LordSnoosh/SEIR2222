@@ -13,7 +13,7 @@ path('index/', views.index, name='index')
 
 
 ## Django Models and Admin Functionality!
-3. After you create a model, what must you do to synchronize the databases's schema with the app's models?
+3. After you create a model, what two terminal commands must you input to your terminal to synchronize the databases's schema with the app's models?
 
 4. What must you do to allow an admin to interact with a model?
 
