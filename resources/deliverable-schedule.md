@@ -20,3 +20,4 @@ It is a requirement to complete at least **80%** of the following to to receive:
 | Fri 03/19, Mon 03/22 & Tue 03/23 | Mongoose "Flights" [Part 1](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w04/d5/03-04-mongoose-flights-lab-part-1.md), Part 2 & Part 3 Labs | Fri 03/26 |
 | Tue 04/06 | [Python Control Flow Lab](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w07/d2/03-control-flow-lab.md) | Thu 04/08 |
 | Wed 04/07 | [Python Containers Lab](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w07/d3/02-containers-lab.md) | Fri 04/09 |
+| Mon 04/26 & Tue 04/27 | [React Dev Skills Lab - Part 1](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w10/d1/02-react-devskills-lab-part-1.md), [Part 2](https://git.generalassemb.ly/SEI-CC/SEIR-02-22-21/blob/master/work/w10/d1/04-react-devskills-lab-part-2.md), Part 3 & Part 4 | Fri 04/30 |
