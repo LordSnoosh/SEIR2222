@@ -317,7 +317,7 @@ As usual, if using zsh, you may have to quote the key=value pair like this:
 % heroku config:set "AWS_ACCESS_KEY_ID=AKIAJYO6WFUBRZUI6ZNQ"
 ```
 
-> Note: If setting AWS keys from Boto3, ensure the key names are in all caps (they are lowercase in `~/.aws/credentials`).
+> Note: Be sure to set all of the entries in the `.env` file.
 
 Setting the environment variables via the command line automatically restarts the server - which is necessary.  If you set the _config vars_ in Heroku's Dashboard, it won't restart the server.  However, you can restart the server manually using<br>`$ heroku restart`
 
