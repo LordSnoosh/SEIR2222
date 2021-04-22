@@ -25,7 +25,7 @@
 
 - Open a terminal in VS Code: `ctrl + backtick`
 
-- Make sure that the `master` branch is checked out
+- Make sure that the `main` branch is checked out
 
 ### Heroku Account & Toolbelt
 
@@ -162,7 +162,7 @@ However, the `requirements.txt` file may be edited to remove packages that you *
 
 ## 3. Commit the Changes
 
-Now let's commit the changes made to the project (make sure that you're on the `master` branch):
+Now let's commit the changes made to the project (make sure that you're on the `main` branch):
 
 ```
 $ git add -A
@@ -176,7 +176,7 @@ The `heroku` remote was added to the repo with the `heroku create` command ran e
 So, deploying the first time and re-deploying later is as easy as running this command:
 
 ```
-$ git push heroku master
+$ git push heroku main
 ```
 
 The first deployment will take considerably longer than subsequent deployments because Heroku will have to install all of the Python packages.  However, during re-deployments, Heroku will only install/uninstall changes made to `requirements.txt`.
