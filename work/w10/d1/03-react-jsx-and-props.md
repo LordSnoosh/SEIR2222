@@ -67,7 +67,7 @@ JavaScript expressions evaluate to a single value/reference and can be used wher
 - Provided as an argument to a function call
 - Returned from a function
 
-Statements on the other hand, perform actions. A program consists primarily of statements. For example, `if` statements, assignment statements, `for` and `while` loops are not expressions.
+Statements on the other hand, perform actions. A program consists primarily of statements that include expressions. For example, `if` statements, assignment statements, `for` and `while` loops are not expressions.
 
 ## Writing JS Expressions Into the DOM Using JSX
 
