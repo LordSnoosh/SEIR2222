@@ -346,7 +346,8 @@ The app should now be rendering the same as before the `<ToDoList>` refactor:
 Your turn to create and render another component:
 
 - Refactor "React To-Do" so that the `<ToDoList>` component renders two `<ToDoListItem>` components instead of the two `<li>` components.
-- In the next lesson you will learn how to pass data to child components, but until then, simply have the `<ToDoListItem>` component render `<li>To Do Item</li>`
+- Define the `<ToDoListItem>` component in its own JS module using the proper naming convention.
+- Simply have the `<ToDoListItem>` component render `<li>To Do Item</li>`. In the next lesson you will learn how to render data passed to the component.
 
 This is what you will see when finished:
 
