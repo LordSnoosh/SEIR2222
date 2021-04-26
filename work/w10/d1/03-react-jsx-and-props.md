@@ -173,13 +173,13 @@ function GoodToGo() {
   - A boolean of `true` or `false`
   - A React Element, e.g., a `<div>` with some content
 
-2. In **ToDoList.jsx** Add another `<li>` to render the array
+2. In **ToDoList.jsx** Add an `<li>` React Element with the array as its content.
 
 As you can see, React can render arrays.  In fact, it's very common to render arrays of components, which we'll do in a bit.
 
 ## What Are Props?
 
-Very simply, **props** are used to pass information from a parent component to a child component.
+Very simply, **props** are used to pass information to component.
 
 > "Information" can be any JS expression such as variables, functions, etc.
 
