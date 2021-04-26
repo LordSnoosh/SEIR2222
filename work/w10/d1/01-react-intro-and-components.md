@@ -195,7 +195,7 @@ Let's see how the `<App>` component is rendered for the first time when the Reac
 
 ## How a React App is Loaded and Renders
 
-Here's what happens a use browses to a web app that uses React for its front-end UI:
+Here's what happens when a user browses to a web app that uses React for its front-end UI:
 
 <img src="https://i.imgur.com/VF9wBLL.png">
 
