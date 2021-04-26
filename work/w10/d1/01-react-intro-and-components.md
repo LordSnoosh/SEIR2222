@@ -277,7 +277,7 @@ import React from 'react';
 
 Those of you with a keen eye might be wondering why `React` is imported but never referenced anywhere in **App.js**.  The reason is that JSX transpiles into JS that uses the `React` class to create components, etc.  We'll see this in the next lesson.
 
-> News Flash:  Importing `React` is no longer necessary with version 17+, however, in CodeSandbox it's still required.
+> News Flash:  Importing `React` is no longer necessary with version 17+, however, in CodeSandbox it's still required.<br>Double-News Flash:  As of 2021, CodeSandbox is now golden too!
 
 ### Stub up and export the Function Component
 
