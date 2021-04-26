@@ -237,7 +237,7 @@ function Person(props) {
       <p>First: {props.name.first}</p>
       <p>Last: {props.name.last}</p>
       <p>Age: {props.age}</p>
-      <button onClick={() => handleRaise(props.name, 9999)}>Give Raise!</button>
+      <button onClick={() => props.handleRaise(props.name, 9999)}>Give Raise!</button>
     </div>
   );
 }
@@ -306,7 +306,7 @@ Let's refactor "React To-Do" so that:
 6. Pass each "todo" string as a prop to the `<ToDoListItem>`.
 7. Refactor the `<ToDoListItem>` component to destructure the `todo` prop and render it instead of the "To Do Item" placeholder text.
 
-#### 1, Define a `todos` array in **App.js**:
+#### 1. Define a `todos` array in **App.js**:
 
 We can define the array outside of or within the function...
 
@@ -324,7 +324,7 @@ const todos = [
 export default function App() {
 ```
 
-> Note: If we defined the `todos` array within the Function Component, it would be "reset" (reassigned) every time the component is rendered, which may, or may not be what you want.
+> Note: If we defined the `todos` array within the Function Component, it would be "reset" (reassigned) every time the component is rendered, which  probably isn't what you want.
 
 #### 2. Pass the `todos` array to the `<ToDoList>` component as a prop:
 
@@ -396,7 +396,7 @@ export default function ToDoList({ todos }) {
 }
 ```
 
-The above approach in clean and it works.  However, since calling the `map()` method is a JS expression that results in an array, it's possible to perform the mapping within the JSX like this:
+The above approach is clean and it works.  However, since calling the `map()` method is a JS expression that results in an array, it's possible to perform the mapping within the JSX like this:
 
 ```jsx
 export default function ToDoList({ todos }) {
@@ -408,7 +408,7 @@ export default function ToDoList({ todos }) {
 }
 ```
 
-The choice of which approach is up to you.
+Which approach to use is up to you.
 
 #### 6. Pass each "todo" string as a prop to the `<ToDoListItem>`
 
