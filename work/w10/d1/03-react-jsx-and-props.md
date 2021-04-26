@@ -20,7 +20,7 @@
 - JSX - What & Why?
 - Review: JS Expressions
 - Writing JS Expressions Into the DOM Using JSX
-- JSX Itself a JS Expression!
+- JSX Itself is a JS Expression!
 - What Are Props?
 - Properly Rendering Arrays of Components
 - Props for React Elements
@@ -101,7 +101,7 @@ The fact that React does not output the value of booleans, `null` or `undefined`
 
 Objects and most of the [built-in Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) (Date, Functions, RegExp, etc.) cannot be rendered as is - just their properties can be rendered.  The practical exception are Arrays which we'll look at shortly.
 
-## JSX Itself a JS Expression!
+## JSX Itself is a JS Expression!
 
 Developing real-world React apps requires tooling to:
 
