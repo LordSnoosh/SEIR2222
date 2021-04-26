@@ -284,8 +284,6 @@ Those of you with a keen eye might be wondering why `React` is imported but neve
 Let's stub up `<ToDoList>` as follows:
 
 ```jsx
-import React from 'react';
-
 export default function ToDoList() {
 
 }
@@ -294,8 +292,6 @@ export default function ToDoList() {
 Note that you may also see components exported using another line of code like this:
 
 ```jsx
-import React from 'react';
-
 function ToDoList() {
 
 }
