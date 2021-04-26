@@ -165,7 +165,7 @@ export default function App() {
 
 A component may be defined using a JS function or class.  Since the introduction of "React hooks" a couple of years ago, the trend has been to code components exclusively with functions.
 
-Out user-defined components commonly render other user-defined components and/or React's built-in components...
+Our user-defined components commonly render other user-defined components and/or React's built-in components...
 
 ### React Elements
 
