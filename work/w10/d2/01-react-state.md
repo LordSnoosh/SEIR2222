@@ -113,13 +113,13 @@ So, how can a Function Component remember state?
 
 Some of you might be thinking to yourselves - _What about using closures?_
 
-Exactly!  Indeed, its closures that enables hooks to remember state, as well as implement other stateful behavior!
+Exactly!  Indeed, it's closures that enables hooks to remember state, as well as implement other stateful behavior!
 
 Some facts about React hooks:
 
 - Hooks are a way to add reusable stateful behavior to Function Components (they are unnecessary and won't work in class components).
 - Hooks themselves are functions and must be named beginning with the word `use` as in `useEffect`.
-- Hooks must be called at the top-level of the function and cannot be called conditionally. For example, a hook cannot be used within an `if` statement.  Basically, React must be able to depend on every hook being called in the exact same order every time the component renders (is invoked by React).
+- Hooks must be called at the top-level of the function and cannot be called conditionally. For example, a hook cannot be called within an `if` statement.  Basically, React must be able to depend on every hook being called in the exact same order every time the component renders (is invoked by React).
 - It's possible to create custom hooks if the built-in hooks don't satisfy your cravings.
 
 ## Add State to a Function Component Using the `useState` Hook
@@ -146,12 +146,12 @@ The first thing we need to do is import the `useState` named export from the `Re
 
 ```jsx
 // App.js
-import React, { useState } from "react";
+import { useState } from "react";
 ```
 
-> Note the syntax for imported **named** exports.  Also, JS modules can have any number of **named** exports and only a single **default** export.
+> Note the syntax for importing **named** exports.  JS modules can have any number of **named** exports and only a single **default** export.
 
-Next, inside of the Function Component we invoke `useState` providing as an argument, the initial value assigned to the state the **first time** the component is rendered:
+Next, inside of the Function Component we invoke `useState` and provide the initial value of the state as an argument.  Note that the initial value is only used to set the state's value when the component is rendered for the **first time**:
 
 ```jsx
 export default function App() {
@@ -163,10 +163,10 @@ export default function App() {
   ...
 ```
 
-The `useState` hook/function always an array with two elements where the:
+The `useState` hook/function always returns an array with two elements where:
 
-- 1st element is the current value for the state
-- 2nd element is the setter function used to update the state's value
+- The 1st element is the current value for the state
+- The 2nd element is the setter function used to update the state's value
 
 <details><summary>❓ So what's that going on with the <code>[todos, setTodos] = ...</code>?</summary>
 <p>
@@ -182,13 +182,11 @@ Using the value of the state is as simple as using the first element returned by
 
 We are free to use the variable holding the state's value any way we want, pass it as a prop, render it, etc.
 
-However, like a prop, we do not directly change it's value - that's the job of the setter function...
+However, we **do not** modify the state's value by reassigning to the state variable.  Instead, updating state is the job of the setter function...
 
 ## Updating State Using the `useState` Hook's Setter Function
 
-When we invoked `useState()`, the second element in the returned array is a function used to update the value of the state.
-
-When we destructured the array, we named the second element `setTodos` because it is a setter function used to update the `todos` state to whatever we pass to the function.
+When we invoked `useState()`, we destructured the returned array naming the second element `setTodos` because it is a setter function used to update the `todos` state to whatever we pass to the function.
 
 By convention, we always name the setter function by pre-pending the name we assigned to the state value variable with the word `set` and adjusting the camelCasing.  For example, if you wanted to track the state of the board in a Tic-Tac-Toe app:
 
@@ -293,9 +291,9 @@ The important thing to remember here though is to replace objects/arrays, not mu
 
 Calling the `useState` hook's setter function is an asynchronous operation.
 
-This means that any synchronous code following the call to the setter will not be accessing the updated state value.
+This means that any synchronous code following the call to the setter will be accessing the "current" value of the state variable, not the updated value.
 
-The state value won't actually be updated until the subsequent render.
+The state's value won't actually be updated until the subsequent render.
 
 [This sandbox](https://codesandbox.io/s/updating-state-is-asynchronous-k6jbv?file=/src/App.js) demonstrates this.
 
@@ -362,7 +360,7 @@ UI-related state is state used to control the dynamic rendering of the UI. For e
 
 UI-related state is usually defined in the component that uses it and since no other component would likely need to access its value.
 
-However, if for some reason the UI-related state needed to be accessed or updated higher up in the hierarchy, then it would need to be defined high enough to be accessed by all components that need to access it.
+However, if for some reason the UI-related state needed to be accessed higher up in the hierarchy, then it would need to be defined high enough to be accessed by all components that need to access it.
 
 ### Data-Related State
 
@@ -429,7 +427,7 @@ Consider the Tic-Tac-Toe app where some of you used a `WINNING_COMBOS` array tha
 
 How we do we persist non-state data?
 
-It depends upon whether that component needs its own copy of that data or not.
+It depends upon whether that component needs its own copy of that data or not...
 
 #### Component Does **Not** Need Its Own Copy of the Non-State Data
 
@@ -437,13 +435,13 @@ When there only needs to be one copy of the data because its value is not access
 
 #### Component Needs Its Own Copy of the Non-State Data
 
-If a Function Component needs to remember its own copy of non-state data between renders, it can't simply define a variable in or outside of the function.
+If a Function Component needs to remember its own copy of non-state data between renders, it **can't** define a variable in or outside of the function.
 
 An example of this situation might be a list of components that each have their own timer created with `setInterval`.  It would be necessary for each component to remember the id of its timer so that it can `clearInterval` at some point. 
 
 There is another hook for this scenario:  [useRef](https://reactjs.org/docs/hooks-reference.html#useref).
 
-There's no need to cover it now, but it's good to know that the `useRef` hook allows a Function Component to remember non-state data between renders. Also, data remembered using a "ref" is mutable and can be updated.
+There's no need to cover it now, but it's good to know that the `useRef` hook allows a Function Component to remember non-state data between renders. Also, data remembered using a "ref" is mutable and can be updated without triggering a re-render.
 
 ## React Fundamentals Chart Update
 
