@@ -110,7 +110,7 @@ Toggle those to-dos!
 
 - The JS expression (always within curly braces) assigned to an event prop must evaluate to a **function**. A function type, **not** a function call (unless that function call returns a function).
 
-- In native JS, if the event handler function returns `false`, it prevents the default behavior of that event and stops event bubbling (same as calling both the `preventDefault()` & `stopPropagation()` methods). However, in React we must call the `preventDefault()` method on React's [Synthetic Event](https://reactjs.org/docs/events.html).
+- React automatically implements event delegation and makes event handling more efficient in a React app by managing events internally - check out React's [Synthetic Event Object](https://reactjs.org/docs/events.html) to learn more.
 
 ## Using "Controlled Inputs" in React
 
@@ -132,7 +132,7 @@ However, a better approach would be to create a separate component responsible f
 
 ### Forms in React Are Not Required
 
-Forms are not required in SPAs because we send data to the server in a SPA using AJAX, not by submitting a form.
+Forms are not required to wrap input elements in SPAs because we send data to the server using AJAX, not by submitting a form.
 
 However, we often still use forms in React for validation, layout/styling using CSS frameworks, etc.
 
@@ -142,11 +142,11 @@ We'll begin by adding a to-do without using a form. Then, we'll add a form later
 
 In a typical HTML page, input elements such as `<input>`, `<textarea>` and `<select>`, maintain their own internal state.
 
-However, working with input the "React way" is different in that:
+However, handling input the "React way" is different in that:
 
 1. The value of an input, i.e., what is displayed, is maintained by our own state in the component.
 
-2. Updating that state requires handling an `onChange` event.
+2. Updating that state requires assigning an event handler function to the `onChange` prop.
 
 This scenario, is what React refers to as a [controlled component/input](https://reactjs.org/docs/forms.html#controlled-components).
 
@@ -174,19 +174,19 @@ Now let's make it a controlled input by first adding state for the `<input>` as 
 
 1. Use the `useState` hook to add state named `newTodo`.
 
-  > Hint: Don't forget to import `useState`
+    > Hint: Don't forget to import `useState`
 
-2. Initialize `newTodo` as an empty string.
+2. Initialize `newTodo` to an empty string.
 
 3. You know what to name the setter - right?
 
-### `value` & `onChange` Props - The Key to Controlled Inputs:  
+### The Key to Controlled Inputs:  `value` & `onChange` Props 
 
 All controlled inputs must include the following two props:
 
 - `value`: This prop is used to bind the state to the input's value (what is displayed).
 
-- `onChange`: This event prop is fired whenever the user types in the input. When handling this event, we need to update the state variable bound to `value`.
+- `onChange`: This event prop will call the provided callback function whenever the user types in the input. Within the callback, we need to update the state variable bound to `value`.
 
 ### Bind State to the `value` Prop
 
@@ -202,7 +202,9 @@ Easy peasy - to check it out, try initializing the state to something other than
 
 You just saw how the `<input>` displays the value of the state it is bound to using the `value` prop.
 
-However, try typing in the input - nothing happens because we need to update the state as the user types.  Here's a simple way for now:
+However, try typing in the input - nothing happens because we need to update the state as the user types.
+
+Here's a simple way for now:
 
 ```jsx
 export default function NewToDoForm() {
