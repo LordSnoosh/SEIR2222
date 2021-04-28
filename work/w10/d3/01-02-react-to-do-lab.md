@@ -47,7 +47,7 @@ Continue to build upon the "React To-Do" sandbox we've been working with during 
 
 - Now when adding a new to-do, an object should be added with a `completed` property set to `false` and its `text` property set to the text of the new to-do.  The app should now be working again - a refresh of the sandbox may be required if it gets "stuck".
 
-- Update the UI by displaying a button with a ❌ if the to-do is completed and a ✔️ if not completed: 
+- The UI should display a button with a ❌ used to delete the to-do if the to-do is completed.  Otherwise, display a button with a ✔️ used to update the to-do as completed: 
 
   <img src="https://i.imgur.com/eyyt7Xy.png">
 
