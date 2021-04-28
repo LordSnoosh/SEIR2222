@@ -24,7 +24,7 @@ This lab provides an opportunity to practice:
     ```jsx
     <option value={1}>1</option>
     ```
-    > Remember, unlike attributes in HTML which always hold strings, props in React can hold any type of date.
+    > Remember, unlike attributes in HTML which always hold strings, props in React can hold any type of data.
 
 4. Following the steps in the lesson, make the `<input>` and `<select>` controlled inputs that update the form's state you created in step 2.
 
