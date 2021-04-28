@@ -20,7 +20,7 @@
 
 Over the next several lessons, we'll continue building out `mern-infrastructure` by implementing the boilerplate that's a part of any MERN-Stack app of significance.
 
-Along the way, we may sprinkle in some SEI CAFE specific content when it makes sense to do so.
+Along the way, we will sprinkle in just a tad of SEI CAFE specific content when it makes sense to do so.
 
 Here's the Plan:
 
@@ -160,13 +160,13 @@ mv src/App.* src/App
 
 The above move will require us to fix the import within **index.js**, which we'll do a bit later because we're not done organizing yet...
 
-### Folders for Organizing Page level and Non-Page Components
+### Folders for Organizing Page-Level and Non-Page Components
 
 Because of the high number of components in a typical React app, we'll create two additional folders to use as a further level of organization:
 
-- **src/pages**: This folder will hold the page level components that implement the app's main functionality and are components that are rendered as the client-side route changes.  For example, in the past where we might have rendered a **movie-detail.ejs** template for a `GET /movies/:id` route, we now might want to render a **MovieDetailPage.jsx** component when at the `/movies/:id` client-side route instead. We'll put the `<App>` component in here as well.
+- **src/pages**: This folder will hold the page-level components that implement the app's main functionality.  One page-level component is rendered for each client-side route.  For example, in the past where we might have rendered a **movies/show.ejs** template for a `GET /movies/:id` route, we now might want to render a **MovieDetailPage.jsx** component when at the `/movies/:id` client-side route instead. We'll move the `<App>` component into the src/pages folder as well.
 
-- **src/components**: This folder will hold all other non-page level components. These components may often be used/rendered by any number of other components. 
+- **src/components**: This folder will hold all other non-page-level components. These components may often be used/rendered by any number of other components. 
 
 Let's create the above two folders:
 
@@ -190,7 +190,7 @@ The previous restructuring requires an update to the way **App.jsx** is being im
 import App from './pages/App/App';
 ```
 
-> Again, it may be necessary to restart React's Dev Server to get the app to compile.
+> Note:  Again, it may be necessary to restart React's Dev Server to get the app to compile.
 
 ## 3. Add Folders to Organize the Express Server Code
 
@@ -257,7 +257,7 @@ Just like we did in Unit 2, we'll use a dedicated Node module to connect to the 
 touch config/database.js
 ```
 
-Hopefully, this code looks somewhat familiar:
+This code might look familiar:
 
 ```js
 const mongoose = require('mongoose');
@@ -330,14 +330,14 @@ require('./config/database');
 // const Category = require('./models/category');
 // const Order = require('./models/order');
 
-// Local variables will come in handy
-// let u, i, c, o;
+// Local variables will come in handy for holding retrieved documents
+let u, i, c, o;
 ```
 
 This is how we will use the **crud-helper.js** module in the future:
 
 ```
-mern-infrastructure[master*] % node
+mern-infrastructure[main*] % node
 Welcome to Node.js v15.2.0.
 Type ".help" for more information.
 > .load crud-helper.js
@@ -364,14 +364,5 @@ It sure doesn't look like much yet - but it's a start!
 
 <img src="https://i.imgur.com/yhORihu.png">
 
-On to the lab!
+We're off and running toward the MERN-Stack!  Now on to the lab!
 
-## The Lab
-
-Putting in reps via labs this unit will be similar to `mongoose-flights` in Unit 2 and `FinchCollector` in Unit 3...
-
-As we build `mern-infrastructure`/SEI CAFE, you'll apply the concepts that we've covered in the lessons toward an app called `react-puppies`.
-
-Along the way, your instructional team will be there to guide you, assist you and answer questions along the way!
-
-**Your completed `react-puppies` MERN-stack app will be a deliverable.**

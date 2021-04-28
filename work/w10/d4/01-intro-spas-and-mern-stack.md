@@ -40,7 +40,7 @@ There are three development concepts that make SPAs possible:
 
 ### Concept 1: Client/Server Communication via AJAX
 
-As you've seen the `fetch` API and utilities such as Axios & jQuery's AJAX methods can be used to send HTTP requests to a server using JavaScript instead of using forms and links in the page.
+As you've seen, the `fetch` API, as well as utilities such as Axios & jQuery's AJAX methods can be used to send HTTP requests to a server using JavaScript instead of using forms and links in the page.
 
 With AJAX, the server responds to an HTTP request with an HTTP response that usually contains a JSON payload in the response body.
 
@@ -78,7 +78,7 @@ However, to make the comment show up in the UI, it needs to be updated using Jav
 
 ### ❓ Review Questions - SPAs
 
-1. **What's the key difference between a traditional web app and a single-page app?**
+1. **What's the most significant difference between a traditional web app and a single-page app?**
 
 2. **What three development concepts enable the creation of comprehensive single-page applications?**
 
