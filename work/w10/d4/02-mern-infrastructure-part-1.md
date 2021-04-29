@@ -120,8 +120,6 @@ Now we can remove the following unused files from the project:
 - **reportWebVitals.js** (assuming you removed it from index.js)
 - **setupTests.js**
 
-Leave the **.eslintcache** file because it's an unavoidable part of the latest version of the CRA boilerplate.
-
 ### **public/index.html**
 
 Let's not forget to update the `<title>` element in the `<head>` of **index.html**.
