@@ -87,7 +87,7 @@ Also as we learned, this is where the top-level `<App>` component is rendered fr
 
 ### **App.js**
 
-First, for better Emmet support and to stay consistent with the way we will name our future components, let's rename **App.js** to **App.jsx**.
+For better Emmet support and to stay consistent with the way we will name our future components, let's rename **App.js** to **App.jsx**.
 
 > It may be necessary to restart React's Dev Server to get the app to compile.
 
@@ -352,7 +352,7 @@ require('./config/database');
 // const Order = require('./models/order');
  
 // Local variables will come in handy
-// let u, i, c, o;
+let u, i, c, o;
  
 {}
 > Connected to mern-infrastructure at localhost:27017
@@ -364,5 +364,7 @@ It sure doesn't look like much yet - but it's a start!
 
 <img src="https://i.imgur.com/yhORihu.png">
 
-We're off and running toward the MERN-Stack!  Now on to the lab!
+We're off and running toward the MERN-Stack!
+
+Now on to the lab!
 
