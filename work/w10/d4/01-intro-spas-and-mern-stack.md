@@ -108,19 +108,19 @@ The flow is as follows:
 
 1. When the user browses to the app's URL, the Express server always delivers the static **public/index.html** page.
 
-    > Note on the server, there are no EJS views.  In fact, there's no reason to install the EJS template engine.
+    > Note that there are no EJS templates on the server - just the static index.html.  In fact, there's no reason to install the EJS template engine.
 
-2. When the browser loads **index.html**, it will request the scripts that contain the React library and the React app - this is shown as the blue CLIENT/React app.
+2. When the browser loads **index.html**, it will request the scripts that contain the React app - this is shown as the blue CLIENT/React app.
 
 3. The code in the React app's **index.js** module runs, which causes the React app to render for the first time. During this initial rendering, the client-side routing library renders components based upon the path of the URL.
 
-4. Certain components may want to CRUD data on the server. However, we won't litter components with the code responsible for CRUD. Instead, as a best practice, that code will be organized into **service/API** modules.
+4. After the **index.html** has been loaded, all subsequent HTTP communications between the client and server will be via AJAX in order to avoid the page from being reloaded.
 
-5. After the **index.html** has been loaded, all subsequent HTTP communications between the client and server will be via AJAX in order to avoid the page from being reloaded.
+5. Certain components may want to CRUD data on the server. However, we won't litter components with the code responsible for CRUD. Instead, as a best practice, that code will be organized into **service/API** modules.
 
 6. On the server, a single non-API "traditional" route will be defined with the purpose of delivering the static **index.html** file. We will refer to this route as the "catch all" route since it will match all `GET` requests that do not match any of the "API" routes...
 
-7. Other than the single "catch all" route just mentioned, all other routes on the server will be defined to respond to AJAX requests with JSON. By convention, the endpoints of these routes with be prefaced with `/api`. 
+7. Other than the single "catch all" route just mentioned, all other routes on the server will be defined to respond to AJAX requests with JSON. By convention, the endpoints of these routes with be prefaced with `/api`, e.g., `/api/cats`, `/api/login`, etc.
 
 ### How to Structure a MERN-Stack Project
 
@@ -135,7 +135,7 @@ Additionally, there are concerns in both **development and production** environm
 A React project uses a development server, similar to Django's, that compiles and serves the React app to the browser at `localhost:3000`.
 
 <details>
-<summary>There's a conflict between React's development server and the Express applications we've built previously - what is it?</summary>
+<summary>❓ There's a conflict between React's development server and the Express applications we've built previously - what is it?</summary>
 <p><strong>They both run on port 3000 by default.</strong></p>
 </details>
 
@@ -160,7 +160,7 @@ There are two general architectures we could pursue:
 
 | Architecture | Pros | Cons |
 | --- | --- | --- |
-| Separate Projects | Better for when the backend services multiple frontend projects (web, native mobile, desktop). | <ul><li>Must manage two projects and git repos.</li><li>Must deploy to two separate hosts, **or**, copy over the frontend production code to the server project before each deployment.</li><li>The React project will require code and/or configuration required for accessing the correct backend which is different for development & production.</li></ul> |
+| Separate Projects | Better for when the backend services multiple frontend projects (web, native mobile, desktop). | <ul><li>Must manage two projects and git repos.</li><li>Must deploy to two separate projects.</li><li>The React project will require code and/or configuration to access the correct backend during development (localhost) and production (could be anywhere).</li></ul> |
 | Single Project | A single integrated project. | None |
 
 The single, integrated project approach looks to be a no-brainer. But, what does the structure of a single project look like?
@@ -201,7 +201,7 @@ Here's the plan:
 1. Generate the React app
 2. Build the React app's production code
 3. Code the skeleton Express app
-4. Define the "catch all" route
+4. Define the "catch all" route in the Express backend
 5. Test the Express server
 
 Let's do this!
@@ -253,7 +253,7 @@ Now we can:
 1. `cd mern-infrastructure`
 2. Open the project in VS Code: `$ code .`
 3. Open an integrated terminal in VS Code:  `control + backtick`
-4. Spin up React's built-in development server: `npm start`, which will also automatically open the app in a browser tab:
+4. Spin up React's built-in development server: `npm start`, which automatically opens the app in a browser tab at `localhost:3000`:
 
     <img src="https://i.imgur.com/4ouH8bS.png" height="400">
 
@@ -280,7 +280,7 @@ npm run build
 
 > Note: npm requires us to use the `run` command for scripts other than `start` and `test`.
  
-After building, examining our project's structure reveals a new **build** folder containing production ready static assets including **index.html**, **static/css** & **static/js** folders, etc.
+After building, examining our project's structure reveals a new **build** folder containing production ready static assets including **index.html**, **static/css** & **static/js** folders, etc.  If this React app was a frontend only app, the assets in the build folder would be ready to be deployed to any static hosting service.
 
 This **build** folder of production-ready goodness is ready to be served up by an Express backend...
 
@@ -400,7 +400,7 @@ Therefore, in the MERN-Stack development environment, it's important to start th
 nodemon server
 ```
 
-As expected, the Express server will run on port 3001 instead of 3000, which is where the React dev server runs.
+As expected, the Express server will run on port 3001 instead of 3000 (which is where the React dev server runs).
 
 Browsing to `localhost:3001` will display our React app!
 
