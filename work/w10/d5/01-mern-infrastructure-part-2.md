@@ -438,7 +438,10 @@ export default function NavBar() {
 }
 ```
 
-Clicking the links will perform client-side navigation without triggering a page reload:
+Clicking any of the links performs client-side routing where React Router will:
+
+- Update the path in the address bar without causing the page to reload
+- Automatically trigger a render
 
 <img src="https://i.imgur.com/R5aElPF.png">
 
