@@ -239,7 +239,7 @@ Now, thanks to the `<Route>` component, changing the path of the URL to `/orders
 
 <img src="https://i.imgur.com/JxQVTFx.png">
 
-You may find it interesting that a URL path of `/orders` will also render `<NewOrderPage>` - let's see why...
+You may find it interesting that a URL path of `/orders/new/something-else` will also render `<NewOrderPage>` - let's see why...
 
 ### Using the `<Switch>` Component to Render Only One `<Route>` 
 
