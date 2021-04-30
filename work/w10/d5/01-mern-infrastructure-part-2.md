@@ -229,7 +229,7 @@ import { useState } from 'react';
 import { Route } from 'react-router-dom';
 ```
 
-Then, to avoid having to continually update the `user` state using React Developer Tools, let's initialize `user` to an empty object instead of `null`:
+Then, to avoid having to continually update the `user` state using React Developer Tools, let's temporarily initialize `user` to an empty object instead of `null`:
 
 ```jsx
 const [user, setUser] = useState({});
