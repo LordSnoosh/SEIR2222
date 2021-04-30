@@ -7,7 +7,7 @@
 |Students Will Be Able To:|
 |---|
 | Add `user` State to the MERN-Stack App |
-| Conditionally Render Components Using a Ternary Expression |
+| Selectively Render Components Using a Ternary Expression |
 | Implement Client-Side Routing Using the React Router Library |
 | Implement Basic Navigation in a MERN-Stack App |
 
@@ -26,7 +26,7 @@ In Part 2 we will implement client-side routing as we continue to learn how to b
 1. Set up `user` state
 2. Add skeleton page-level components
 3. Conditionally render based on the `user` state 
-4. Intro to client-side routing using React Router
+4. Intro client-side routing using React Router
 5. Implement client-side routing
 6. Utilize a `<Redirect>` component
 7. Implement a typical navigation bar
@@ -48,7 +48,7 @@ Note that `<App>` is always rendered but only one of the other page-level compon
 
 A good place to start is to define the `user` state.
 
-#### 💪 Practice Exercise - Define the `user` State in **App.jsx** (3 minutes)
+#### 💪 Practice Exercise - Define the `user` State in **App.jsx** (2 minutes)
 
 1. Use the `useState` hook to define a state variable named `user`.
 2. Initialize `user` to `null`. 
@@ -87,6 +87,8 @@ Examining our routing diagram above, we can see that we are conditionally render
 
 Since we want to render either `<AuthPage>` or one of the other two (`<NewOrderPage>` or `<OrderHistoryPage>`), we'll opt for a _______ expression.
 
+Until we start using React Router, we'll just render `<NewOrderPage>` if there's a user logged in.
+
 Here's the refactor in **App.jsx**:
 
 ```jsx
@@ -101,9 +103,7 @@ return (
 );
 ```
 
-Until we start using React Router, we'll just render `<NewOrderPage>` if there's a user logged in.
-
-Currently we have an error because we haven't imported those components.  Let's import all three while we're at it:
+You'll have an error if the components were not automatically imported. Let's ensure all three components are imported while we're at it:
 
 ```jsx
 import './App.css';
@@ -141,7 +141,7 @@ npm i react-router-dom
 
 ### How it Works - React Router Is Component-Based!
 
-**React Router provides several components used to conditionally render our app's components based upon the path of the address bar's URL.**
+**React Router provides several components used to conditionally render our app's components based upon the path of the URL in the address bar**
 
 Please read the above again because it's fundamental to understanding how React Router works.
 
@@ -149,7 +149,7 @@ Please read the above again because it's fundamental to understanding how React 
 
 [`<BrowserRouter>`](https://reactrouter.com/web/api/BrowserRouter) is the top-level React Router component that makes React Router work.
 
-Only a single `<BrowserRouter>` needs to be rendered and any other component that needs routing must be rendered within it, thus, the convention is to wrap the `<App>` component.
+Only a single `<BrowserRouter>` needs to be rendered and any components that need to use routing features must be nested within it, thus, the convention is to wrap the `<App>` component.
 
 <details><summary>❓ In which module will we need to wrap <code>&LT;App></code> with <code>&LT;BrowserRouter></code>?</summary>
 <p>
