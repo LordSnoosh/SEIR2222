@@ -14,23 +14,22 @@
 
 - The Plan - Part 3
 - Infrastructure - Part 3 of 7
-- The Lab
 - Further Study
 
 ## The Plan - Part 3
 
 In Part 3 we will begin to implement the ever so important user authentication.
 
-Along the way we'll also learn how to define a component as a class instead of a function and preview how we're going to organize non-React code into service modules.
+Along the way we'll also learn how to define a component as a class instead of a function and preview how we're going to organize non-React code into service & API modules.
 
 **Part 3 - Begin Implementing Token-Based Auth:**
 1. The process of adding a feature to a MERN-Stack app
 2. Code the `<SignUpForm>` component as a class component
-3. Add service & API modules on the client
+3. Add service & API modules for the client
 
 ## 1. The process of adding a feature to a MERN-Stack app
 
-The **process** of adding a feature to a MERN-Stack SPA is similar to what we've followed when adding a feature to our traditional web apps in Units 2 & 3 in that we typically:
+The **process** of adding a feature to a MERN-Stack SPA is similar to what we followed when adding a feature to our traditional web apps in Units 2 & 3 in that we typically:
 
 1. Start with the UI/frontend... Render a component with an event prop designed to handle interaction from the user, e.g., `onClick`.
 2. Stub up and assign an event handler function to the event prop.
@@ -43,7 +42,7 @@ The **process** of adding a feature to a MERN-Stack SPA is similar to what we've
 
 4. Define a route on the server that maps the AJAX request to a controller action.
 5. Code the controller action to perform any necessary CRUD and send a JSON response back to the client.
-6. Again, back in the event handler of the component, update state using the JSON received from the server and programmatically change routes if necessary.
+6. Back in the event handler of the component, if necessary, update state using the JSON received from the server and optionally programmatically change routes.
 
 Basically, adding functionality starts with code on the client, then the server, and coming back full-circle to the client.
 
@@ -85,6 +84,7 @@ Class components in React typically inherit from the [`Component`](https://react
 
 ```jsx
 // SignUpForm.jsx
+
 import { Component } from 'react';
 ```
 
@@ -114,6 +114,8 @@ There's no difference in how we import and render function and class components.
 Let's import and render `<SignUpForm>` within **AuthPage.jsx** and do a minor refactor while we're at it:
 
 ```jsx
+// AuthPage.jsx
+
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 
 export default function AuthPage() {
@@ -140,7 +142,7 @@ Our `<SignUpForm>` is going to need the following state:
 - `confirm`: Used to confirm the password is entered correctly
 - `error`: Used to display an error message if the sign up fails
 
-Unlike with a function component that can define multiple pieces of state by using the `useState` hook multiple times, a class component's state is always a single object assigned to a `state` property on the instance of the component.
+Unlike with a function component that can define multiple pieces of state by using the `useState` hook multiple times, **a class component's state is always a single object assigned to a `state` property on the instance of the component**.
 
 There are two ways to initialize the `state` property:
 
@@ -151,6 +153,7 @@ Of course, we'll use the **class fields** approach that all the cool kids are us
 
 ```jsx
 export default class SignUpForm extends Component {
+  // state is always an object with a property for each "piece" of state
   constructor() {
     this.state = {
       name: '',
@@ -235,7 +238,7 @@ The form is rendering but it's ugly and we can't type in the inputs yet because 
 
 ### Defining Event Handler Methods in a Class Component
 
-The `handleChange()` method **can't** be defined using the usual syntax for defining instance method of a class, e.g., just like how the `render()` method is being defined.
+The `handleChange()` method **can't** be defined using the usual syntax for defining an instance method of a class like that of the `render()` method.
 
 The reason the usual syntax won't work is because the method will be invoked as a callback and thus will not have `this` bound to the component instance as necessary if we want to be able to access `this.props`, `this.setState()`, etc.
 
@@ -272,8 +275,8 @@ That code is pretty much what we learned in the _React Fundamentals - Handling I
 
 There's two key differences in how state is updated in class vs. function components:
 
-- Class components always update state by invoking the inherited `setState()` method vs. the way a function component uses the various setter functions returned by the `useState` hook.
-- [`setState()`](https://reactjs.org/docs/react-component.html#setstate) accepts an object and this object is **merged** into the existing state object. This differs with how a function component's setter function **replaces** that state with the value provided.
+- Class components always update state by invoking the inherited `setState()` method vs. invoking the setter function(s) returned by the `useState` hook in function components.
+- [`setState()`](https://reactjs.org/docs/react-component.html#setstate) accepts an object as an arg and this object is **merged** into the existing state object. This differs with how a function component's setter function **replaces** that state with the value provided.
 
     > Note: `setState` also has a couple of other signatures - refer to the [docs](https://reactjs.org/docs/react-component.html#setstate) for more info.
 
@@ -285,7 +288,7 @@ The `<form>` React Element in `<SignUpForm>` already has an event handler method
 
 - Using the same class field syntax used when defining `handleChange()`, define a method named `handleSubmit()` above the `render()` method.
 - As we learned during the _React Fundamentals - Handling Input and Events_ lesson, we need to prevent the form from being submitted to the server by including `evt.preventDefault();` as the first line of code.
-- Baby step by adding the following as a second line of code `alert(JSON.stringify(this.state));`.
+- Baby step by adding this additional line of code `alert(JSON.stringify(this.state));`.
 
 Check it out by typing in some info and submitting the form:
 
@@ -293,13 +296,14 @@ Check it out by typing in some info and submitting the form:
 
 ### Add the CSS
 
-Yeah, `<SignUpForm>` is pretty ugly. Obviously though the JSX we added was thinking ahead in terms of styling because the `<form>` React Element has a `className="form-container"` prop.
+Yeah, `<SignUpForm>` is pretty ugly, however, the JSX we added was thinking ahead in terms of styling because the `<form>` React Element has a `className="form-container"` prop.
 
 **❓ The `form-container` CSS class is intended to be reused by multiple forms in the app, therefore it should be defined in the ________ module?**
 
 The CSS for the SEI CAFE app is not trivial, so instead of adding CSS to **index.css** in bits and pieces, let's go ahead and add all the general purpose CSS up front:
 
 ```css
+/* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
@@ -469,13 +473,14 @@ In a MERN-Stack app there's bound to be application/business logic, AJAX/API req
 Although it would be possible to code this logic directly within components, there are downsides of doing so:
 
 - Poor code organization. As you know, it's better to modularize related code into separate modules, e.g., the `config/database.js` module.  Organizing code into modules makes it easier to build an application because you'll more or less know where new code will go.  It's also easier to refactor and debug when code is organized into focused modules.
-- Not DRY and violates the "separation of concerns" principle.  For example, if we wanted to fetch the same data from more than one component, we'd be repeating ourselves. Heck, often service and API modules can often be used by multiple projects.
+- Smaller, more readable components. Reading a line of code like `const user = await signUp(formData);` in a component is far better than having read through all of the code included in the `signUp()` "service" function.
+- Not DRY and violates the "separation of concerns" principle.  For example, if we wanted to fetch the same data from more than one component, we'd be repeating ourselves. Often service and API modules can often be used by multiple projects.
 
 ### Utilities, Services, APIs, oh my...
 
 Some common ways to organize code into modules are:
 
-- **Utility modules**: Modules that hold general purpose functions or business logic.  These modules are reusable in multiple projects.
+- **Utility modules**: Modules that hold general purpose functions, for example, a `formatTime(seconds)` function.  These modules are reusable in multiple projects.
 - **Service modules**: Service modules are where we can organize application specific logic such as functions for signing-up or logging in a user. Service modules often use and depend upon API modules...
 - **API modules**: API modules are for abstracting logic that make network requests such as AJAX calls to the backend or third-party APIs. This abstraction makes it easier to refactor code to use different techniques, libraries, etc.  For example, we are going to be using `fetch` for our AJAX communications, however, refactoring to use a library such as Axios would be made easy thanks to the use of API modules.
 
