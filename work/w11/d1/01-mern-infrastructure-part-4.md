@@ -215,7 +215,7 @@ const formData = {name, email, password};
 Even though we don't yet have the following `signUp` service method being invoked, let's continue coding by following the flow from the component to the service method, then to the API/AJAX method...
 
 ```
-SignUpForm.jsx <--> users-service.js <--> users-api.js <--> server.js (Express)
+SignUpForm.jsx <--> users-service.js <--> users-api.js <-Internet-> server.js (Express)
 ```
 
 ```jsx
