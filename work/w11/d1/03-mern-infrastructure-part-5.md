@@ -13,7 +13,6 @@
 
 - The Plan - Part 5
 - Infrastructure - Part 5 of 7
-- The Lab
 
 ## The Plan - Part 5
 
