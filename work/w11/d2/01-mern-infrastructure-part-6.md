@@ -34,10 +34,10 @@ We can't simply assign the token to a variable or put it on state because a page
 
 Instead, we'll utilize the browser's [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to persist the JWT. This also enables the user to be logged in automatically when they browse to the app! That is, as long as the JWT hasn't expired.
 
-<details><summary>❓ Challenge Question:  Where in the code does it make the most sense to persist the token to local storage?</summary>
+<details><summary>❓ Where in the code does it make the most sense to persist the token to local storage?</summary>
 <p>
 
-**The `signUp` method in the `users-service.js` module.**
+**The `signUp` method in the `users-service.js` module (when the token has been received from the server).**
 
 </p>
 </details>
@@ -82,7 +82,7 @@ Let's start with when the app is loaded/refreshed...
 
 ### Setting the `user` State When the Page is Loaded or Refreshed
 
-<details><summary>❓ In plain language, what logic will it take to set the <code>user</code> state when the page loads/refreshes?</summary>
+<details><summary>❓ In plain language, what logic should we implement to set the <code>user</code> state when the page loads/refreshes? Try to consider the three cases of token persistence in localStorage: Valid token exists; Expired token exists; and no token exists.</summary>
 <p>
 
 <ol><strong>
@@ -401,9 +401,7 @@ export default function LogIn({ setUser }) {
 
 <strong>Just kidding - this is great news!
 
-You've had considerable practice working with state, input, props, etc.
-
-However, you're going to implement the rest of the login functionality as a group practice exercise!</strong>
+You've had considerable practice working with state, input, props, etc., so you're going to implement the rest of the login functionality as a group practice exercise!</strong>
 
 </p>
 </details>
