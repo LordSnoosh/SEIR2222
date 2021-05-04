@@ -466,7 +466,7 @@ Be sure to read all of the following before starting to code...
         if (!user) throw new Error();
         const match = await bcrypt.compare(req.body.password, user.password);
         if (!match) throw new Error();
-        res.json({ token: createJWT(user) });
+        res.json( createJWT(user) );
       } catch {
         res.status(400).json('Bad Credentials');
       }
