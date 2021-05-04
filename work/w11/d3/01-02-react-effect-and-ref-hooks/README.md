@@ -30,9 +30,16 @@ Here's the setup:
 1. Move into your code folder: `cd ~/code`
 2. Clone the `sei-cafe-codealong` repo:  `git clone https://git.generalassemb.ly/SEI-CC/sei-cafe-codealong.git`
 3. Move into the newly created folder:  `cd sei-cafe-codealong`
-4. Open VS Code: `code .`
-5. Open a terminal and start the Express server: `nodemon server`
-6. Open another terminal and start React's dev server: `npm start`
+4. Cloning a project will not include the Node modules, so install them: `npm i`
+5. Open VS Code: `code .`
+6. Open a terminal and build the React code to create the `build` folder, otherwise the Express server will not start up:  `npm run build`
+7. Next, the `.env` file also has to be touched and updated with this goodness before starting the Express server:
+    ```
+    DATABASE_URL=mongodb://localhost/mern-infrastructure
+    SECRET=SEIRocks
+    ```
+8. Now you can start the Express server: `nodemon server`
+9. Open another terminal and start React's dev server: `npm start`
 
 ## 2. Seed the `categories` and `items` Collections
 
