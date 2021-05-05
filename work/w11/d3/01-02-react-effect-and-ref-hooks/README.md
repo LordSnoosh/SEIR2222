@@ -35,7 +35,7 @@ Here's the setup:
 6. Open a terminal and build the React code to create the `build` folder, otherwise the Express server will not start up:  `npm run build`
 7. Next, the `.env` file also has to be touched and updated with this goodness before starting the Express server:
     ```
-    DATABASE_URL=mongodb://localhost/mern-infrastructure
+    DATABASE_URL=mongodb://localhost/sei-cafe-codealong
     SECRET=SEIRocks
     ```
 8. Now you can start the Express server: `nodemon server`
@@ -52,7 +52,7 @@ It's common for administrators to seed (initialize) an application's database wi
 
 Rarely would data that users typically create while using the app be seeded - unless it was "demo" data 😊
 
-The code that seeds a database is external to the application itself, i.e., not a part of the running application and is usually executed just once.
+The code that seeds a database is external to the application itself, i.e., it's not a part of the running application and is usually executed just once.
 
 ### SEI CAFE's Data Model
 
@@ -96,7 +96,7 @@ const categorySchema = new Schema({
 module.exports = mongoose.model('Category', categorySchema);
 ```
 
-> Note: The `sortOrder` property allows us to determine the ordering of the categories for display purposes, reporting, etc. instead of relying on some other property when sorting.
+> Note: The `sortOrder` property allows us to determine the ordering of the categories for display and/or reporting purposes instead of having to rely on some other property, e.g., `name`.
 
 Now for the `Item` model:
 
@@ -257,21 +257,21 @@ The following tasks may be considered side effects in a React Function Component
 
 ### Why is `useEffect` Necessary?
 
-The `useEffect` hook is necessary for Function Components to be able to perform side effects like those listed above at the proper time.
+The `useEffect` hook is necessary for Function Components to be able to perform side effects like those listed above at the **proper time**.
 
 But wait, you may be wondering then how we were able to make AJAX requests to sign up and log in without `useEffect`.
 
-The reason is that, in React, we are able to perform side effects in **event handlers** because the component has already been rendered (the function is done executing) and the DOM has stabilized.
+The reason is that, in React, we are able to perform side effects in **event handlers** because the component has already been rendered (the function is done executing) and the DOM has stabilized - there are no synchronization issues.
 
-This is exactly what `useEffect` enables, i.e., performing side effects immediately after a Function Component has finished rendering.
+Outside of event handlers, the `useEffect` hook enables us to perform side effects immediately after a Function Component has finished rendering.
 
 ### Example of the Timing/Synchronization Issue
 
 In the screenshot above you can see that `<NewOrderPage>` displays a list of menu items and categories.
 
-In SEI CAFE, the catalog of menu items is retrieved from the server via an AJAX request and saved in a state variable.
+In SEI CAFE, the catalog of menu **items** needs to be retrieved from the server via an AJAX request and saved in a state variable when the component is rendered for the first time.
 
-> FYI:  SEI CAFE does not retrieve categories via AJAX. Instead, the categories are computed by reducing the array of menu items into an array of categories. This approach is not only more efficient than an AJAX request that results in a database query, it eliminates displaying any categories that might not have any menu items!
+> FYI:  SEI CAFE does not retrieve **categories** via AJAX. Instead, the categories are computed by reducing the array of menu items into an array of categories. This approach is not only more efficient than an AJAX request that results in a database query, it eliminates displaying any categories that might not have any menu items!
 
 Let's open **NewOrderPage.jsx** and consider the following pseudocode to accomplish our goal:
 
@@ -349,9 +349,7 @@ Now let's add a simple button that simply invokes `setMenuItems` which will trig
 }
 ```
 
-Clicking the button will result in the `useEffect` hook invoking its  callback after each time `<NewOrderPage>` is rendered:
-
-<img src="https://i.imgur.com/oZi1Q90.png">
+Clicking the button will now result in the `useEffect` hook invoking its callback after each time `<NewOrderPage>` is rendered.
 
 Okay, it's clear that `useEffect` can be used to execute code after each render. But that doesn't solve our dilemma because we would still end up with an infinite loop.
 
@@ -363,8 +361,8 @@ Most of the time we don't want to perform a side effect after **every** render.
 
 Usually, we only want to run a side effect:
 
-- After the component renders the **first time**.
-- After a state variable or a prop has changed.
+- After the component renders the **first time**, to load data via AJAX for example.
+- After a state variable or a prop has changed, for example, to fetch data when a client-side route parameter changes.
 
 Both of the above scenarios can be achieved by passing a second argument to `useEffect`. This second argument is known as a **dependency array**.
 
@@ -375,12 +373,12 @@ Any number of `useEffect` hooks can be used in the same Function Component, so l
 
 ...
 useEffect(function() {
-  console.log('NewOrderPage rendered');
+  console.log('useEffect runs after every render');
 });
 
 // Add this useEffect with a dependency array
 useEffect(function() {
-  console.log('useEffect with dependency array ran');
+  console.log('useEffect runs only after first render');
 }, []);
 ...
 ```
@@ -407,7 +405,7 @@ Now let's see how `useEffect` works if we actually add a dependency value to the
 
 ...
 useEffect(function() {
-  console.log('useEffect with dependency array ran');
+  console.log('useEffect runs when menuItems changes);
 }, [menuItems]);
 
 return (
@@ -446,7 +444,7 @@ export function getAll() {
 }
 
 // This function is never actually used in SEI CAFE, it's
-// only provided here to remind you to follow RESTful routing
+// only provided here to remind you to follow RESTful routing, etc.
 export function getById(id) {
   return sendRequest(`${BASE_URL}/${id}`);
 }
@@ -497,7 +495,7 @@ However, React won't approve of our first crack at it using `async`/`await`:
 
 ...
 useEffect(function() {
-  console.log('NewOrderPage rendered');
+  console.log('useEffect runs after every render');
 });
 
 // Refactor the useEffect below - don't miss the empty []
@@ -508,6 +506,12 @@ useEffect(async function() {
 }, []);
 ...
 ```
+
+#### 💪 Practice Exercise (1 minute)
+
+- Add the necessary import statement based upon the above code.
+
+<hr>
 
 The above approach results in the following error:
 
@@ -565,6 +569,20 @@ useEffect(function() {
 ```
 
 Check out [these React docs](https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup) for more info.
+
+### ❓ `useEffect` Review Questions
+
+1. **True or False:  In general, the `useEffect` hook is used to run code after a component renders.**
+
+2. **When will the following effect run?**
+
+    ```js
+    useEffect(async function() {
+      console.log('Effect ran');
+    }, []);
+    ```
+
+3. **True or False:  The `useEffect` hook can be used to run code after a certain state variable changes.**
 
 ## 7. Computing the Categories and Persisting Them With `useRef`
 
