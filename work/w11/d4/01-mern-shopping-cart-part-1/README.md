@@ -399,11 +399,11 @@ Yes, we could write a Mongoose query in the controller, but it's a good practice
 Let's add the `getCart` static:
 
 ```js
-// models/cart.js
+// models/order.js
 
 ...
 // statics are callable on the model, not an instance (document)
-orderSchema.statics.getCart = async function (userId) {
+orderSchema.statics.getCart = function (userId) {
   // 'this' is bound to the model (don't use an arrow function)
   // return the promise that resolves to a cart (the user's unpaid order)
   return this.findOneAndUpdate(

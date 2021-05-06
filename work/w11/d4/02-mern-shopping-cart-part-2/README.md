@@ -128,7 +128,7 @@ Here's the remaining flow of logic when an **[ADD]** button is clicked:
   ```js
   router.post('/cart/items/:id', ordersCtrl.addToCart);
   ```
-- The `addToCart` function mapped to by the route is stubbed up - and controller action will we'll send back the updated cart from the server used to update the `cart` state with. We'll add some more Mongoose magic to the `Order` model too.
+- The `addToCart` function mapped to by the route is stubbed up - and that controller action will send back the updated cart from the server used to update the `cart` state with. We'll add some more Mongoose magic to the `Order` model too.
 
 ### Finish Coding the `handleAddToOrder` Function
 
@@ -209,14 +209,14 @@ The `handleChangeQty` function belongs in `<NewOrderPage>` just like `handleAddT
 ```jsx
 /*--- Event Handlers --- */
 async function handleAddToOrder(itemId) {
-  const cart = await ordersAPI.addItemToCart(itemId);
-  setCart(cart);
+  const updatedCart = await ordersAPI.addItemToCart(itemId);
+  setCart(updatedCart);
 }
 
 // Add this function
 async function handleChangeQty(itemId, newQty) {
-  const cart = await ordersAPI.setItemQtyInCart(itemId, newQty);
-  setCart(cart);
+  const updatedCart = await ordersAPI.setItemQtyInCart(itemId, newQty);
+  setCart(updatedCart);
 }
 ```
 
@@ -265,7 +265,7 @@ The `setItemQty` instance method is very similar to the `addItemToCart` we coded
 // models/order.js
 
 // Instance method to set an item's qty in the cart (will add item if does not exist)
-orderSchema.methods.setItemQty = async function (itemId, newQty) {
+orderSchema.methods.setItemQty = function (itemId, newQty) {
   // this keyword is bound to the cart (order doc)
   const cart = this;
   // Find the line item in the cart for the menu item
@@ -293,7 +293,7 @@ Just another clean controller action coming up:
 ```js
 // Updates an item in the cart's qty
 async function setItemQtyInCart(req, res) {
-  let cart = await Order.getCart(req.user._id);
+  const cart = await Order.getCart(req.user._id);
   await cart.setItemQty(req.body.itemId, req.body.newQty); 
   res.json(cart);
 }
