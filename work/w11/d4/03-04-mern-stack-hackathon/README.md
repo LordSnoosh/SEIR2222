@@ -92,7 +92,7 @@ The starter code includes a partially coded `<OrderHistoryPage>` that correctly 
 
 - The code we've written together has taught you everything you need to know - be sure to examine the starter code because it provides similar code for everything you need to do.
 
-- Refer to the models to for the property names (including virtuals) being rendered. Some data might need to be formatted to match the wireframe.
+- Refer to the models for the property names (including virtuals) being rendered. Some data might need to be formatted to match the wireframe.
 
 - Follow the flow when implementing features:
     ```
