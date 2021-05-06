@@ -353,7 +353,7 @@ useEffect(function() {
 
 > There's no need to add a separate `useEffect` because the existing `useEffect` has the necessary empty array dependency (`[]`).
 
-The React app isn't compiling because we have need a new `import`.
+The React app isn't compiling because we need an additional `import`.
 
 #### 💪 Practice Exercise - Add the Missing `import` (1 minute)
 
