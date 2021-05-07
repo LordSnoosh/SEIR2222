@@ -15,4 +15,4 @@
 | Luis | Green Recipes | [link](https://github.com/lhern026/green-recipes) | [link](https://trello.com/b/aYGZb0mN/green-recipes) |  |
 | Stuart | SpellBinder | [link](https://github.com/StuK359/spellbinder) | [link](https://trello.com/b/COkxzGtr/spellbinder) |  |
 | Urian |  |  |  |  |
-| Xavi | "Out-Then-In"<br>Burger Ordering App | [link](https://github.com/imthedude2351/Out-then-In) | [link](https://trello.com/b/ZQhadnLL/out-then-in) |  |
+| Xavi | Out-Then-In | [link](https://github.com/imthedude2351/Out-then-In) | [link](https://trello.com/b/ZQhadnLL/out-then-in) |  |
