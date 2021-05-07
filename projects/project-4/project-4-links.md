@@ -4,7 +4,7 @@
 |---|:---:|:---:|:---:|:---:|
 | Chase | Ebay Inventory | [link](https://github.com/chaseeanderson/inventory-app-shoes) | [link](https://trello.com/b/YL0XB6Am/ebay-inventory) |  |
 | Danny | Shopping List<br>(Find a Recipe App) |  |  |  |
-| Danielle | Smite Builder |  |  |  |
+| Danielle | Save Your Smite | [link](https://github.com/damartinez16/save-your-smite) | [link](https://trello.com/b/gXdPX2Ql/save-your-smite) |  |
 | Dave | Mini-Me Builder<br>(D & D Character Planner) |  |  |  |
 | Diego | Realtime Chat |  |  |  |
 | Elliot | React Piano | [link](https://github.com/elliothwang/react-piano) | [link](https://trello.com/b/K8NLvCu6/ga-project-4) |  |
