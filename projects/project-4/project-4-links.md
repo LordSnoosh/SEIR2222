@@ -8,8 +8,8 @@
 | Dave | Mini-Me Builder<br>(D & D Character Planner) |  |  |  |
 | Diego | Realtime Chat |  |  |  |
 | Elliot | React Piano | [link](https://github.com/elliothwang/react-piano) | [link](https://trello.com/b/K8NLvCu6/ga-project-4) |  |
-| Erwin | Pet Transfer |  |  |  |
-| Harrison | Wine or Recipe App |  |  |  |
+| Erwin | Pet Transfer | [link](https://github.com/erwinmedina/pet-transfer) | [link](https://trello.com/b/mG5YJIwU/pet-transfer) |  |
+| Harrison | Juice Inventory | [link](https://github.com/Harrison-Berek/juice-inventory) | [link](https://trello.com/b/26QbQeT1/inventory-app) |  |
 | Jack | Photo Filter | [link](https://github.com/jackhr/photo-filter) | [link](https://trello.com/b/qlb0VjWO/photo-filter) |  |
 | Khawar | Movie Tracker |  |  |  |
 | Luis | Green Recipes | [link](https://github.com/lhern026/green-recipes) | [link](https://trello.com/b/aYGZb0mN/green-recipes) |  |
