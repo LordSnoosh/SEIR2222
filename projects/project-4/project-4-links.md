@@ -6,7 +6,7 @@
 | Danny | SkillTrade | [link](https://github.com/danny-shindel/skilltrade) | [link](https://trello.com/b/aMiezta0/skilltrade) |  |
 | Danielle | Save Your Smite | [link](https://github.com/damartinez16/save-your-smite) | [link](https://trello.com/b/gXdPX2Ql/save-your-smite) |  |
 | Dave | Mini-Me Builder<br>(D & D Character Planner) |  |  |  |
-| Diego | React Chat |  | [link](https://trello.com/b/WKC2kzJa/chat-app) |  |
+| Diego | React Chat | [link](https://github.com/DiegoRuiz06/Chat-App) | [link](https://trello.com/b/WKC2kzJa/chat-app) |  |
 | Elliot | React Piano | [link](https://github.com/elliothwang/react-piano) | [link](https://trello.com/b/K8NLvCu6/ga-project-4) |  |
 | Erwin | Pet Transfer | [link](https://github.com/erwinmedina/pet-transfer) | [link](https://trello.com/b/mG5YJIwU/pet-transfer) |  |
 | Harrison | Juice Inventory | [link](https://github.com/Harrison-Berek/juice-inventory) | [link](https://trello.com/b/26QbQeT1/inventory-app) |  |
