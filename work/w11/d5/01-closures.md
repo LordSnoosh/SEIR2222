@@ -17,7 +17,7 @@
 
 Closures are one of my three **JavaScript Ninja** topics:
 
-1. `prototypal inheritance` and the 	`prototype chain`: **How JS implements object inheritance and property lookup**
+1. `prototypal inheritance` and the 	`prototype chain`: **How JS implements object inheritance and property lookup** - however, this is no longer critical to know about since we now have classes in JS.
 2. `this`: **A keyword in JS that represents a function's "context" during its execution** <br>and finally,
 3. `closures`: **A feature in the JS programming language that enables a function's free variables to exist even after its enclosing function has completed execution**  
 
@@ -25,7 +25,7 @@ This discussion on closures is an important one because they are a key feature o
 
 More importantly, you will likely be asked about them in technical interviews.
 
-To start, realize that closures are **not** explicitly created; code like this:
+To start, realize that closures are **not** explicitly created - you would never write code like this:
 
 ```js
 // No such thing!
