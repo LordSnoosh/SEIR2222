@@ -3,7 +3,7 @@
 | Student | Project Name | GitHub | Planning (Trello) | Hosted Site |
 |---|:---:|:---:|:---:|:---:|
 | Chase | Ebay Inventory | [link](https://github.com/chaseeanderson/inventory-app-shoes) | [link](https://trello.com/b/YL0XB6Am/ebay-inventory) |  |
-| Danny | Shopping List<br>(Find a Recipe App) |  |  |  |
+| Danny | SkillTrade | [link](https://github.com/danny-shindel/skilltrade) | [link](https://trello.com/b/aMiezta0/skilltrade) |  |
 | Danielle | Save Your Smite | [link](https://github.com/damartinez16/save-your-smite) | [link](https://trello.com/b/gXdPX2Ql/save-your-smite) |  |
 | Dave | Mini-Me Builder<br>(D & D Character Planner) |  |  |  |
 | Diego | React Chat |  | [link](https://trello.com/b/WKC2kzJa/chat-app) |  |
