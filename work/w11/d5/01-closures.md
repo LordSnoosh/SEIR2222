@@ -36,6 +36,8 @@ Basically, closures come into and out of existence when JavaScript programs exec
 
 ## What's a "free" Variable?
 
+Closures are about functions accessing "free" variables.
+
 **Free variables** are the variables accessible by a function up the scope chain - not the ones defined locally.
 
 ## Review of Scope
