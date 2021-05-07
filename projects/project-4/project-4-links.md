@@ -7,12 +7,12 @@
 | Danielle | Smite Builder |  |  |  |
 | Dave | Mini-Me Builder<br>(D & D Character Planner) |  |  |  |
 | Diego | Realtime Chat |  |  |  |
-| Elliot | Piano Keyboard Player |  |  |  |
+| Elliot | React Piano | [link](https://github.com/elliothwang/react-piano) | [link](https://trello.com/b/K8NLvCu6/ga-project-4) |  |
 | Erwin | Pet Transfer |  |  |  |
 | Harrison | Wine or Recipe App |  |  |  |
-| Jack | Photo Filter |  |  |  |
+| Jack | Photo Filter | [link](https://github.com/jackhr/photo-filter) | [link](https://trello.com/b/qlb0VjWO/photo-filter) |  |
 | Khawar | Movie Tracker |  |  |  |
 | Luis | Green Recipes | [link](https://github.com/lhern026/green-recipes) | [link](https://trello.com/b/aYGZb0mN/green-recipes) |  |
 | Stuart | D&D 5th Edition Spellbook |  |  |  |
 | Urian |  |  |  |  |
-| Xavi | "OUT-N-IN"<br>Burger Ordering App |  |  |  |
+| Xavi | "Out-Then-In"<br>Burger Ordering App | [link](https://github.com/imthedude2351/Out-then-In) | [link](https://trello.com/b/ZQhadnLL/out-then-in) |  |
