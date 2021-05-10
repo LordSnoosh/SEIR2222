@@ -14,5 +14,5 @@
 | Khawar | Movieology | [link](https://github.com/khawarrr/movieology) | [link](https://trello.com/b/3a9fBxyC/movieology-project-4) |  |
 | Luis | Green Recipes | [link](https://github.com/lhern026/green-recipes) | [link](https://trello.com/b/aYGZb0mN/green-recipes) |  |
 | Stuart | SpellBinder | [link](https://github.com/StuK359/spellbinder) | [link](https://trello.com/b/COkxzGtr/spellbinder) |  |
-| Urian |  |  |  |  |
+| Urian | MyCut | [link](https://github.com/Saiyan626/myCut) |  |  |
 | Xavi | Out-Then-In | [link](https://github.com/imthedude2351/Out-then-In) | [link](https://trello.com/b/ZQhadnLL/out-then-in) |  |
