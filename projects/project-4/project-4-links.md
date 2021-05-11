@@ -13,6 +13,6 @@
 | Jack | Photo Filter | [link](https://github.com/jackhr/photo-filter) | [link](https://trello.com/b/qlb0VjWO/photo-filter) |  |
 | Khawar | Movieology | [link](https://github.com/khawarrr/movieology) | [link](https://trello.com/b/3a9fBxyC/movieology-project-4) |  |
 | Luis | Green Recipes | [link](https://github.com/lhern026/green-recipes) | [link](https://trello.com/b/aYGZb0mN/green-recipes) | [link](https://greeen-recipe.herokuapp.com/) |
-| Stuart | SpellBinder | [link](https://github.com/StuK359/spellbinder) | [link](https://trello.com/b/COkxzGtr/spellbinder) |  |
+| Stuart | SpellBinder | [link](https://github.com/StuK359/spellbinder) | [link](https://trello.com/b/COkxzGtr/spellbinder) | [link](https://spellbinder.herokuapp.com/) |
 | Urian | MyCut | [link](https://github.com/Saiyan626/myCut) | [link](https://trello.com/b/EM97TR5r/mycut) |  |
 | Xavi | Out-Then-In | [link](https://github.com/imthedude2351/Out-then-In) | [link](https://trello.com/b/ZQhadnLL/out-then-in) | [link](https://out-then-in.herokuapp.com/) |
