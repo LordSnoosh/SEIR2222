@@ -5,7 +5,7 @@
 | Chase | Ebay Inventory | [link](https://github.com/chaseeanderson/inventory-app-shoes) | [link](https://trello.com/b/YL0XB6Am/ebay-inventory) | [link](https://kicks-inventory.herokuapp.com/) |
 | Danny | SkillTrade | [link](https://github.com/danny-shindel/skilltrade) | [link](https://trello.com/b/aMiezta0/skilltrade) | [link](https://skill--trade.herokuapp.com/) |
 | Danielle | Save Your Smite | [link](https://github.com/damartinez16/save-your-smite) | [link](https://trello.com/b/gXdPX2Ql/save-your-smite) | [link](https://save-your-smite.herokuapp.com/) |
-| Dave | MiniMeBuilder | [link](https://github.com/LordSnoosh/minime-maker) | [link](https://trello.com/b/77UX18ND/ga-project-4-minimebuilder) | [link](https://mini-memaker.herokuapp.com/) |
+| Dave | MiniMeEquipment | [link](https://github.com/LordSnoosh/mini-me-equipment) | [link](https://trello.com/b/77UX18ND/ga-project-4-minimebuilder) | [link](https://mini-me-equipment.herokuapp.com/) |
 | Diego | React Chat | [link](https://github.com/DiegoRuiz06/Chat-App) | [link](https://trello.com/b/WKC2kzJa/chat-app) |  |
 | Elliot | React Piano | [link](https://github.com/elliothwang/react-piano) | [link](https://trello.com/b/K8NLvCu6/ga-project-4) | [link](https://mini-midi.herokuapp.com/) |
 | Erwin | Pet Transfer | [link](https://github.com/erwinmedina/pet-transfer) | [link](https://trello.com/b/mG5YJIwU/pet-transfer) | [link](https://pettransfer.herokuapp.com/) |
