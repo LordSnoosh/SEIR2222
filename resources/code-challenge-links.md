@@ -14,6 +14,6 @@
 | Khawar | [link](https://git.generalassemb.ly/khawarrr/daily-js-code-challenges) | 20% | 100% | 87% |
 | Luis | [link](https://git.generalassemb.ly/lhern026/daily-js-code-challenges) | 20% | 15% | 80% |
 | Stuart | [link](https://git.generalassemb.ly/stuartklingman/daily-js-code-challenges) | 70% | 100% | 100% |
-| Urian | [link](https://git.generalassemb.ly/urian/daily-js-code-challenges) | 0% | 20% | 13% |
+| Urian | [link](https://git.generalassemb.ly/urian/daily-js-code-challenges) | 0% | 20% | 90% |
 | Xavier | [link](https://git.generalassemb.ly/imthedude2351/daily-js-code-challenges) | 20% | 35% | 70% |
 
